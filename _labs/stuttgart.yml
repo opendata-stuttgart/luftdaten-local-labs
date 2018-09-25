@@ -1,0 +1,18 @@
+---
+key: stuttgart
+title: Lab Stuttgart
+lat: 48.776540
+long: 9.173700
+markerposition: left
+
+meetings:
+- text: jeden 2. Dienstag im Monat im shackspace
+- text: jeden 4. Dienstag im Monat in der Stadtbibliothek
+
+contacts:
+- name: Jan Lutz
+  url: mailto:jan@luftdaten.info
+- name: Lukas
+  url: mailto:lukas@luftdaten.info
+- name: Rajko Zschiegner
+  url: mailto:rajko@codefor.de

@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ____        _       __                     __  __      _
-   / __ \____ _(_)___  / /_  ____ _      __   / / / /___  (_)________  _________
-  / /_/ / __ `/ / __ \/ __ \/ __ \ | /| / /  / / / / __ \/ / ___/ __ \/ ___/ __ \
- / _, _/ /_/ / / / / / /_/ / /_/ / |/ |/ /  / /_/ / / / / / /__/ /_/ / /  / / / /
-/_/ |_|\__,_/_/_/ /_/_.___/\____/|__/|__/   \____/_/ /_/_/\___/\____/_/  /_/ /_/
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>
@@ -26,74 +11,121 @@
   <meta name="viewport" content="width=device-width">
 
 
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/main.css?v=1.7">
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="alternate" type="application/rss+xml" title="Blog | Local Labs and contacts" href="/feed.xml">
 
-  <script src="/js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/lib/jquery-1.10.1.min.js"><\/script>')</script>
-  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- leaflet map -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css">
-  <script src='/js/lib/leaflet.iconlabel.js'></script>
-
-  <!-- webfont  -->
-  <script>
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
 
   </head>
 
   <body>
-  <!--[if lt IE 7]>
-  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-  <![endif]-->
 
   <div class="body-wrap">
     <div class="page-wrap">
       <!-- Lab Map -->
-<div style="padding:0px;">
-    <div id="lab-map"></div>
+<div style="padding:0px">
+    <div id="lab-map" style="width:100%;height:100%;min-height:400px;"></div>
 </div>
 
 <script>
     $(document).ready(function() {
     // initialize map, set position and zoom level
-    var map = L.map('lab-map').setView([51.1642292, 10.4541194], 6);
+    var map = L.map('lab-map').setView([51.1642292, 10.4541194], 4);
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
     var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-        minZoom: 5
+        minZoom: 2,
+        maxZoom:10
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
         iconUrl: 'img/lab_marker_home.png',
         shadowUrl: null,
         iconSize: new L.Point(21, 35),
-        iconAnchor: new L.Point(0, 0),
+        iconAnchor: new L.Point(10, 34),
         labelAnchor: new L.Point(25, 2),
-        wrapperAnchor: new L.Point(10, 35)
+        wrapperAnchor: new L.Point(10, 35),
+        popupAnchor:  [-0, -35]
     };
     // load markers and put on map
     
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    var labelLeft = labelRight.extend({
+        options:  { labelClassName: 'label-left'}
+    });
+    
+    
+    var marker = L.marker( [50.845369, 4.357297], { icon:
+        
+            new labelLeft(
+        
+            { labelText:'<a href="/brussels/"></a>'}),
+        riseOnHover: true })
+    .bindPopup('Civic Lab Brussels<br/>\
+		\
+			Meetings:<br/>\
+			\
+			bi-weekly<br/>\
+			\
+			<br />\
+		\
+		\
+			Kontakte:<br/>\
+			\
+			<a href="mailto:dries@openknowledge.be">Dries van R.</a><br/>\
+			\
+			<br />\
+		\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    var labelLeft = labelRight.extend({
+        options:  { labelClassName: 'label-left'}
+    });
+    
+    
+    var marker = L.marker( [48.77654, 9.1737], { icon:
+        
+            new labelLeft(
+        
+            { labelText:'<a href="/stuttgart/"></a>'}),
+        riseOnHover: true })
+    .bindPopup('Lab Stuttgart<br/>\
+		\
+			Meetings:<br/>\
+			\
+			jeden 2. Dienstag im Monat im shackspace<br/>\
+			\
+			jeden 4. Dienstag im Monat in der Stadtbibliothek<br/>\
+			\
+			<br />\
+		\
+		\
+			Kontakte:<br/>\
+			\
+			<a href="mailto:jan@luftdaten.info">Jan Lutz</a><br/>\
+			\
+			<a href="mailto:lukas@luftdaten.info">Lukas</a><br/>\
+			\
+			<a href="mailto:rajko@codefor.de">Rajko Zschiegner</a><br/>\
+			\
+			<br />\
+		\
+    ')
+    .addTo(map)
     
     
     // load basemaps

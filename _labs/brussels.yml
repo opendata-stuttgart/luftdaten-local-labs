@@ -1,0 +1,13 @@
+---
+key: brussels
+title: Civic Lab Brussels
+lat: 50.845369
+long: 4.357297
+markerposition: left
+
+meetings:
+- text: bi-weekly
+
+contacts:
+- name: Dries van R.
+  url: mailto:dries@openknowledge.be
