@@ -17,14 +17,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }}
-    {% else %}
-      {{ site.title }} ~ {{ site.description }}
-    {% endif %}
+    
+      Local Labs and contacts ~ 
+    
   </title>
 
-  <meta name="description" content="{{ page.excerpt | strip_html }}">
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
 
@@ -33,7 +31,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/main.css?v=1.7">
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="alternate" type="application/rss+xml" title="Blog | {{ site.title }}" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Blog | Local Labs and contacts" href="/feed.xml">
 
   <script src="/js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -69,7 +67,42 @@
 
   <div class="body-wrap">
     <div class="page-wrap">
-      {{ content }}
+      <!-- Lab Map -->
+<div style="padding:0px;">
+    <div id="lab-map"></div>
+</div>
+
+<script>
+    $(document).ready(function() {
+    // initialize map, set position and zoom level
+    var map = L.map('lab-map').setView([51.1642292, 10.4541194], 6);
+    map.attributionControl.setPrefix("");
+    map.scrollWheelZoom.disable();
+    // basemap
+    var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+        minZoom: 5
+    });
+    // define left-aligned and right-aligned labels and icons
+    var labelBaseOptions = {
+        iconUrl: 'img/lab_marker_home.png',
+        shadowUrl: null,
+        iconSize: new L.Point(21, 35),
+        iconAnchor: new L.Point(0, 0),
+        labelAnchor: new L.Point(25, 2),
+        wrapperAnchor: new L.Point(10, 35)
+    };
+    // load markers and put on map
+    
+    
+    
+    // load basemaps
+    mapLayer.addTo(map);
+});
+</script>
+
+
+
     </div>
   </div>
 
