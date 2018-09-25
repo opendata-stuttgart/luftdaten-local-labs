@@ -1,0 +1,176 @@
+---
+layout: base
+
+---
+
+<!-- Get metadata from collection -->
+{% for lab in site.labs %}
+  {% if page.key == lab.key %}
+    {% assign meta = lab %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+
+<!-- Lab Map -->
+{% if meta.lat and meta.long %}
+  <div class="jumbotron fond__gray map-container" style="padding:0px;">
+    <div id="lab-map" class="lab-map-city"></div>
+    {% if meta.special %}
+      {% include drl-map-legend.html %}
+    {% endif %}
+  </div>
+{% endif %}
+<!-- Lab Map End -->
+
+{% if meta.showsignup %}
+  {% include join-form-lab.html %}
+{% else %}
+
+<!-- Lab Info -->
+<div class="jumbotron fond__green text__white">
+  <div id="lab" class="container lab-info">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="highlight-white"> {{ meta.title }} </h1>
+        {{ page.content | markdownify }}
+      </div>
+      <div class="col-lg-6">
+        {% if meta.links %}
+          <h3>{% if page.lang == 'en' %}Basic Info{% else %}Basis Info{% endif %}</h3>
+          <ul class="list-unstyled lab-links" >
+            {% for link in meta.links %}
+              <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if meta.leads %}
+          <h3>{% if page.lang == 'en' %}Contact{% else %}Kontakt{% endif %}</h3>
+          <ul class="list-unstyled lab-links" >
+            {% for lead in meta.leads %}
+              <li><a href="{{ lead.url }}">{{ lead.name }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Lab Info End -->
+
+
+<!-- Termine  -->
+{% assign now = site.time | date: '%Y-%m-%d' %}
+{% assign events = site.termine | where:"lab",meta.lab | sort: 'date' %}
+{% assign last_date = events.last.date | date: '%Y-%m-%d' %}
+
+{% if last_date >= now %}
+  <div class="jumbotron fond__grey">
+    <div class="container">
+      <h3 id="events">Termine</h3>
+      <div class="row">
+        {% comment %} Display one event per row by default {% endcomment %}
+        {% assign item_class = 'col-lg-12' %}
+
+        {% for event in events %}
+          {% assign date = event.date | date: '%Y-%m-%d' %}
+          {% unless date < now %}
+            {% unless forloop.last %}
+              {% comment %} Display two events per row if there is more than one event {% endcomment %}
+              {% assign item_class = 'col-lg-6' %}
+            {% endunless %}
+            <div class="{{ item_class }}">
+              {% include event.html %}
+            </div>
+
+            {% unless forloop.last %}
+              {% comment %}
+                Every second event: close the current row and open a new one
+                unless it is the last iteration.
+              {% endcomment %}
+              {% cycle '', '</div><div class="row">' %}
+            {% endunless %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+<!-- Termine End -->
+
+<!-- Projekte -->
+{% assign sorted_projects = site.pages | where_exp:"sitepage","sitepage.lab contains meta.lab" | where:"layout","project" | sort: 'date' %}
+{% if meta.projectsorder != 'reverse' %}
+  {% assign sorted_projects = sorted_projects | reverse %}
+{% endif %}
+
+{% if sorted_projects.size > 0 %}
+  <div class="jumbotron fond__blue">
+    <div class="container">
+      <h3 id="projects">{% if page.lang == 'en' %}Projects{% else %}Projekte{% endif%}</h3>
+      <div class="loading">
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <div>...{% if page.lang == 'en' %}loading{% else %}laden{% endif %}...</div>
+      </div>
+      <div class="packery-container">
+        <div class="packery-item-gutter"></div>
+        {% for sitepage in sorted_projects %}
+          <div class="packery-item" >
+            {% include project-teaser.html type='page' %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+<!-- Projekte End -->
+
+
+<!-- Mitglieder-->
+{% if meta.members %}
+  <div class="jumbotron fond__greymid">
+    <div class="container">
+      <h3 id="members">{% if page.lang == 'en' %}Members{% else %}Mitglieder{% endif%}</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          {% assign members = meta.members %}
+          {% include members-list.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% endif %}
+
+
+<script src="/js/lib/packery.pkgd.min.js"></script>
+<script src="/js/lib/imagesloaded.pkgd.min.js"></script>
+<script src="/js/PackeryGrid.js"></script>
+<script src="/js/lib/prettyCheckbox.min.js"></script>
+
+{% if meta.lat and meta.long %}
+  {% include leaflet-city.html %}
+{% endif %}
+
+<script type="text/javascript">
+$(document).ready(function() {
+  packery = new PackeryGrid('.packery-container','.packery-item', '.packery-item-gutter');
+  $(":checkbox").prettyCheckbox();
+});
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "{{ meta.title }}",
+    "url" : "http://codefor.de/{% if page.lang == 'en' %}en/{% endif%}{{ meta.key }}/",
+    "sameAs" : [
+      {% for link in meta.links %}
+        "{{ link.url }}"{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    ]
+  }
+</script>
