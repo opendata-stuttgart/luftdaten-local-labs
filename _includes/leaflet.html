@@ -1,0 +1,54 @@
+<script>
+    $(document).ready(function() {
+    // initiaize map, set position and zoom level
+    var map = L.map('lab-map').setView([51.1642292, 10.4541194], 6);
+    map.attributionControl.setPrefix("");
+    map.scrollWheelZoom.disable();
+    // basemap
+    var mapboxLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
+        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+        minZoom: 5
+    });
+    // define left-aligned and right-aligned labels and icons
+    var labelBaseOptions = {
+        iconUrl: '/img/lab_marker_home.png',
+        shadowUrl: null,
+        iconSize: new L.Point(21, 35),
+        iconAnchor: new L.Point(0, 0),
+        labelAnchor: new L.Point(25, 2),
+        wrapperAnchor: new L.Point(10, 35)
+    };
+    // load markers and put on map
+    {% for lab in site.labs %}
+    {% if lab.lat and lab.long %}
+    var labelRight = L.Icon.Label.extend({
+        options: labelBaseOptions
+    });
+    var labelLeft = labelRight.extend({
+        options:  { labelClassName: 'label-left'}
+    });
+    
+    {% if lab.special %} 
+        labelRight = labelRight.extend({options:  { iconUrl: '/img/lab_marker_special_home.png' }});
+        labelLeft = labelLeft.extend({ options:  { iconUrl: '/img/lab_marker_special_home.png' }});
+    {% endif %}
+    var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
+        {% if lab.markerposition == 'left' %}
+            new labelLeft(
+        {% else %}
+            new labelRight(
+        {% endif %}
+        
+        {% if page.lang == 'en' %}
+            { labelText:'<a href="/en/{{ lab.key }}/">{{ lab.lab }}</a>'}),
+        {% else %}
+            { labelText:'<a href="/{{ lab.key }}/">{{ lab.lab }}</a>'}),
+        {% endif%}
+        riseOnHover: true })
+    .addTo(map)
+    {% endif%}
+    {% endfor %}
+    // load basemaps
+    mapLayer.addTo(map);
+});
+</script>
