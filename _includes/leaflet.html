@@ -11,7 +11,7 @@
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
-        iconUrl: '/img/lab_marker_home.png',
+        iconUrl: 'img/lab_marker_home.png',
         shadowUrl: null,
         iconSize: new L.Point(21, 35),
         iconAnchor: new L.Point(0, 0),
@@ -29,8 +29,8 @@
     });
     
     {% if lab.special %} 
-        labelRight = labelRight.extend({options:  { iconUrl: '/img/lab_marker_special_home.png' }});
-        labelLeft = labelLeft.extend({ options:  { iconUrl: '/img/lab_marker_special_home.png' }});
+        labelRight = labelRight.extend({options:  { iconUrl: 'img/lab_marker_special_home.png' }});
+        labelLeft = labelLeft.extend({ options:  { iconUrl: 'img/lab_marker_special_home.png' }});
     {% endif %}
     var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
         {% if lab.markerposition == 'left' %}
