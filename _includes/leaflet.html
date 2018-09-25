@@ -1,11 +1,11 @@
 <script>
     $(document).ready(function() {
-    // initiaize map, set position and zoom level
+    // initialize map, set position and zoom level
     var map = L.map('lab-map').setView([51.1642292, 10.4541194], 6);
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
-    var mapboxLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
+    var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
         minZoom: 5
     });
