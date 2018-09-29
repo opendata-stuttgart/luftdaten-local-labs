@@ -3,7 +3,9 @@ key: brussels
 title: Civic Lab Brussels
 lat: 50.845369
 long: 4.357297
-markerposition: left
+
+meetings_title: Meetings
+contacts_title: Contacts
 
 meetings:
 - text: bi-weekly

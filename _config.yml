@@ -1,3 +1,5 @@
+# Config file for luftdaten.info lab map
+
 title: "Local Labs and contacts"
 collections:
   labs:
