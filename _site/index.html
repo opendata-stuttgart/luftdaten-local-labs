@@ -44,7 +44,7 @@
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
-        iconUrl: 'img/lab_marker.png',
+        iconUrl: 'img/lab_marker_home.png',
         shadowUrl: null,
         iconSize: new L.Point(21, 35),
         iconAnchor: new L.Point(10, 34),
@@ -58,27 +58,30 @@
     var labelRight = L.Icon.extend({
         options: labelBaseOptions
     });
+    var labelLeft = labelRight.extend({
+        options:  { labelClassName: 'label-left'}
+    });
+    
     
     var marker = L.marker( [50.845369, 4.357297], { icon:
-            new labelRight(
-            { labelText:'<a href="/brussels/"></a>'}), riseOnHover: true })
-			.bindPopup('<b>Civic Lab Brussels</b><br/><br/>\
-			<b>\
-				\
-					Meetings<br/>\
-				</b>\
-				\
-					bi-weekly<br/>\
-				\
-				<br />\
+        
+            new labelLeft(
+        
+            { labelText:'<a href="/brussels/"></a>'}),
+        riseOnHover: true })
+    .bindPopup('Civic Lab Brussels<br/>\
+		\
+			Meetings:<br/>\
 			\
-			<b>\
-				\
-					Contacts<br/>\
-				</b>\
-				\
-					<a href="mailto:dries@openknowledge.be">Dries van R.</a><br/>\
-				\
+			bi-weekly<br/>\
+			\
+			<br />\
+		\
+		\
+			Kontakte:<br/>\
+			\
+			<a href="mailto:dries@openknowledge.be">Dries van R.</a><br/>\
+			\
 			<br />\
 		\
     ')
@@ -89,35 +92,36 @@
     var labelRight = L.Icon.extend({
         options: labelBaseOptions
     });
+    var labelLeft = labelRight.extend({
+        options:  { labelClassName: 'label-left'}
+    });
+    
     
     var marker = L.marker( [48.77654, 9.1737], { icon:
-            new labelRight(
-            { labelText:'<a href="/stuttgart/"></a>'}), riseOnHover: true })
-			.bindPopup('<b>Lab Stuttgart</b><br/><br/>\
-			<b>\
-				\
-					Meetings<br/>\
-				</b>\
-				\
-					jeden 2. Dienstag im Monat im <a href="https://shackspace.de">shackspace</a><br/>\
-				\
-					jeden 4. Dienstag im Monat in der <a href="http://www1.stuttgart.de/stadtbibliothek/">Stadtbibliothek</a><br/>\
-				\
-					weitere Infos auf <a href="https://www.meetup.com/de-DE/OK-Lab-Stuttgart-Meet-Up/">Meetup</a><br/>\
-				\
-				<br />\
+        
+            new labelLeft(
+        
+            { labelText:'<a href="/stuttgart/"></a>'}),
+        riseOnHover: true })
+    .bindPopup('Lab Stuttgart<br/>\
+		\
+			Meetings:<br/>\
 			\
-			<b>\
-				\
-					Kontakte<br/>\
-				</b>\
-				\
-					<a href="mailto:jan@luftdaten.info">Jan Lutz</a><br/>\
-				\
-					<a href="mailto:lukas@luftdaten.info">Lukas</a><br/>\
-				\
-					<a href="mailto:rajko@codefor.de">Rajko Zschiegner</a><br/>\
-				\
+			jeden 2. Dienstag im Monat im shackspace<br/>\
+			\
+			jeden 4. Dienstag im Monat in der Stadtbibliothek<br/>\
+			\
+			<br />\
+		\
+		\
+			Kontakte:<br/>\
+			\
+			<a href="mailto:jan@luftdaten.info">Jan Lutz</a><br/>\
+			\
+			<a href="mailto:lukas@luftdaten.info">Lukas</a><br/>\
+			\
+			<a href="mailto:rajko@codefor.de">Rajko Zschiegner</a><br/>\
+			\
 			<br />\
 		\
     ')

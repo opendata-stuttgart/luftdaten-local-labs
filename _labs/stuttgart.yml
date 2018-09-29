@@ -3,14 +3,11 @@ key: stuttgart
 title: Lab Stuttgart
 lat: 48.776540
 long: 9.173700
-
-meetings_title: Meetings
-contacts_title: Kontakte
+markerposition: left
 
 meetings:
-- text: jeden 2. Dienstag im Monat im <a href="https://shackspace.de">shackspace</a>
-- text: jeden 4. Dienstag im Monat in der <a href="http://www1.stuttgart.de/stadtbibliothek/">Stadtbibliothek</a>
-- text: weitere Infos auf <a href="https://www.meetup.com/de-DE/OK-Lab-Stuttgart-Meet-Up/">Meetup</a>
+- text: jeden 2. Dienstag im Monat im shackspace
+- text: jeden 4. Dienstag im Monat in der Stadtbibliothek
 
 contacts:
 - name: Jan Lutz

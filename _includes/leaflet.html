@@ -12,7 +12,7 @@
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
-        iconUrl: 'img/lab_marker.png',
+        iconUrl: 'img/lab_marker_home.png',
         shadowUrl: null,
         iconSize: new L.Point(21, 35),
         iconAnchor: new L.Point(10, 34),
@@ -26,31 +26,35 @@
     var labelRight = L.Icon.extend({
         options: labelBaseOptions
     });
+    var labelLeft = labelRight.extend({
+        options:  { labelClassName: 'label-left'}
+    });
     
+    {% if lab.special %} 
+        labelRight = labelRight.extend({options:  { iconUrl: 'img/lab_marker_special_home.png' }});
+        labelLeft = labelLeft.extend({ options:  { iconUrl: 'img/lab_marker_special_home.png' }});
+    {% endif %}
     var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
+        {% if lab.markerposition == 'left' %}
+            new labelLeft(
+        {% else %}
             new labelRight(
-            { labelText:'<a href="/{{ lab.key }}/">{{ lab.lab }}</a>'}), riseOnHover: true })
-			.bindPopup('<b>{{ lab.title }}</b><br/><br/>\
-			{% if lab.meetings %}<b>\
-				{% if lab.meetings_title %}\
-					{{ lab.meetings_title }}<br/>\
-				{% else %}\
-					Meetings:<br/>\
-				{% endif %}</b>\
-				{% for meeting in lab.meetings %}\
-					{{ meeting.text }}<br/>\
-				{% endfor %}\
-				<br />\
-			{% endif %}\
-			{% if lab.contacts %}<b>\
-				{% if lab.contacts_title %}\
-					{{ lab.contacts_title }}<br/>\
-				{% else %}\
-					Contacts:<br/>\
-				{% endif %}</b>\
-				{% for contact in lab.contacts %}\
-					<a href="{{ contact.url }}">{{ contact.name }}</a><br/>\
-				{% endfor %}\
+        {% endif %}
+            { labelText:'<a href="/{{ lab.key }}/">{{ lab.lab }}</a>'}),
+        riseOnHover: true })
+    .bindPopup('{{ lab.title }}<br/>\
+		{% if lab.meetings %}\
+			Meetings:<br/>\
+			{% for meeting in lab.meetings %}\
+			{{ meeting.text }}<br/>\
+			{% endfor %}\
+			<br />\
+		{% endif %}\
+		{% if lab.contacts %}\
+			Kontakte:<br/>\
+			{% for contact in lab.contacts %}\
+			<a href="{{ contact.url }}">{{ contact.name }}</a><br/>\
+			{% endfor %}\
 			<br />\
 		{% endif %}\
     ')
