@@ -51,8 +51,13 @@
 				{% for contact in lab.contacts %}\
 					<a href="{{ contact.url }}">{{ contact.name }}</a><br/>\
 				{% endfor %}\
-			<br />\
-		{% endif %}\
+				<br />\
+			{% endif %}\
+			{% if lab.website%}\
+				<b>Website</b><br/>\
+				<a href="{{ lab.website }}">{{ lab.website }}</a>\
+				<br />\
+			{% endif %}\
     ')
     .addTo(map)
     {% endif%}
