@@ -1,0 +1,17 @@
+---
+key: cape-town
+title: Air Cape Town
+lat: -33.976499
+long: 18.466334
+
+meetings_title: Meetings
+contacts_title: Contacts
+
+meetings:
+- text: Every 2nd Thursday at the <a href="https://www.meetup.com/Codebridge/">Codebrdige Newlands Community Evenings</a>
+
+contacts:
+- name: Reuben Honigwachs
+  url: mailto:reuben@air-cape-town.org.za
+
+website: http://air-cape-town.org.za/
