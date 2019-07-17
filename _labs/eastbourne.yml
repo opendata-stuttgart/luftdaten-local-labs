@@ -1,0 +1,17 @@
+---
+key: Eastbourne
+title: Clean Air Eastbourne
+lat: 50.7822998
+long: 0.2532976
+
+meetings_title: Meetings
+contacts_title: Contacts
+
+meetings:
+- text: arranged when necessary, usually a Sunday evening in a pub.
+
+contacts:
+- name: Robert Price
+  url: mailto:hello@eastbourneair.com
+
+website: https://eastbourneair.com/
