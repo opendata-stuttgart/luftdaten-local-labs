@@ -1,13 +1,13 @@
 <script>
     $(document).ready(function() {
     // initialize map, set position and zoom level
-    var map = L.map('lab-map').setView([51.1642292, 10.4541194], 4);
+    var map = L.map('lab-map').setView([0, 0], 1);
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
     var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-        minZoom: 2,
+        minZoom: 1,
         maxZoom:10
     });
     // define left-aligned and right-aligned labels and icons
