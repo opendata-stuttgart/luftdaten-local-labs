@@ -1,0 +1,18 @@
+---
+key: rennes
+title: LabFab de Rennes
+lat: 48.104917
+long: -1.676223
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+meetings:
+- text: Lieu de rencontre suivant les ateliers et événements. Les ateliers les plus réguliers sont à la Maison des Associations de Rennes, 6 cours des Alliés, 35000 Rennes
+- text: Fréquence des rencontres suivant les événements. Nous avons des temps d’accueil autour du Luftdaten tous les premiers vendredi midi du mois, de 12h30 à 13h30. 
+
+contacts:
+- name: Association LabFab 
+  url: mailto:contact@labfab.fr
+
+website: http://www.labfab.fr/
