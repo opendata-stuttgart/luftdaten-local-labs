@@ -1,0 +1,15 @@
+
+---
+key: brussels2
+title: Les chercheurs d'air
+lat: 50.871701
+long: 4.331662
+
+meetings:
+- text: weekly in Brussels
+
+contacts:
+- name: Pierre Dornier
+  url: mailto: pierre@leschercheursdair.org
+
+website: https://www.leschercheursdair.be/
