@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>
-    
-      Local Labs and contacts ~ 
-    
-  </title>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>
+			
+				Local Labs and contacts ~ 
+			
+		</title>
 
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width" />
 
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<script src="https://maps.luftdaten.info/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- leaflet map -->
+		<link rel="stylesheet" href="https://maps.luftdaten.info/leaflet/leaflet@1.3.4/dist/leaflet.css">
+		<script src="https://maps.luftdaten.info/leaflet/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
 
-  <!-- leaflet map -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
+		<link rel="stylesheet" href="search/leaflet-search.css" />
+		<script src="search/leaflet-search.js"></script>
 
-  </head>
-
-  <body>
-
-  <div class="body-wrap">
-    <div class="page-wrap">
-      <!-- Lab Map -->
+	</head>
+	<body>
+		<div class="body-wrap">
+			<div class="page-wrap">
+				<!-- Lab Map -->
 <div style="padding:0px">
     <div id="lab-map" style="width:100%;height:100%;min-height:400px;"></div>
 </div>
 
+<style>
+img.leaflet-tile {
+    filter: grayscale(85%) saturate(150%) hue-rotate(60deg) contrast(90%) brightness(110%);
+    -webkit-filter: grayscale(85%) saturate(150%) hue-rotate(60deg) contrast(90%) brightness(110%);
+}
+</style>
 <script>
     $(document).ready(function() {
     // initialize map, set position and zoom level
-    var map = L.map('lab-map').setView([51.1642292, 10.4541194], 4);
+    var map = L.map('lab-map').setView([0, 0], 1);
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
     var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-        minZoom: 2,
-        maxZoom:10
+        minZoom: 1,
+        maxZoom:15
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
@@ -61,7 +69,7 @@
     
     var marker = L.marker( [50.845369, 4.357297], { icon:
             new labelRight(
-            { labelText:'<a href="/brussels/"></a>'}), riseOnHover: true })
+            { labelText:'<a href="/civic_lab_brussels/"></a>'}), riseOnHover: true })
 			.bindPopup('<b>Civic Lab Brussels</b><br/><br/>\
 			<b>\
 				\
@@ -79,8 +87,223 @@
 				\
 					<a href="http://influencair.be/">Dries van R.</a><br/>\
 				\
-			<br />\
-		\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="http://influencair.be/">http://influencair.be/</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [50.871701, 4.331662], { icon:
+            new labelRight(
+            { labelText:'<a href="/brussels_les_chercheurs_d\'air/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Les chercheurs d\'air</b><br/><br/>\
+			<b>\
+				\
+					Meetings:<br/>\
+				</b>\
+				\
+					weekly in Brussels<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contacts:<br/>\
+				</b>\
+				\
+					<a href="mailto:pierre@leschercheursdair.org">Pierre Dornier</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://www.leschercheursdair.be/">https://www.leschercheursdair.be/</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [-33.976499, 18.466334], { icon:
+            new labelRight(
+            { labelText:'<a href="/cape-town/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Air Cape Town</b><br/><br/>\
+			<b>\
+				\
+					Meetings<br/>\
+				</b>\
+				\
+					Every 2nd Thursday at the <a href="https://www.meetup.com/Codebridge/">Codebridge Newlands Community Evenings</a><br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contacts<br/>\
+				</b>\
+				\
+					<a href="mailto:reuben@air-cape-town.org.za">Reuben Honigwachs</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="http://air-cape-town.org.za/">http://air-cape-town.org.za/</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [44.493889, 11.342778], { icon:
+            new labelRight(
+            { labelText:'<a href="/centraline_dal_basso/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Centraline dal Basso</b><br/><br/>\
+			\
+			<b>\
+				\
+					Contacts:<br/>\
+				</b>\
+				\
+					<a href="mailto:centralinedalbasso@protonmail.com">centralinedalbasso@protonmail.com</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://www.facebook.com/Centralinedalbasso/">https://www.facebook.com/Centralinedalbasso/</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [50.7822998, 0.2532976], { icon:
+            new labelRight(
+            { labelText:'<a href="/Eastbourne/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Clean Air Eastbourne</b><br/><br/>\
+			<b>\
+				\
+					Meetings<br/>\
+				</b>\
+				\
+					arranged when necessary, usually a Sunday evening in a pub.<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contacts<br/>\
+				</b>\
+				\
+					<a href="mailto:hello@eastbourneair.com">Robert Price</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://eastbourneair.com/">https://eastbourneair.com/</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [48.104917, -1.676223], { icon:
+            new labelRight(
+            { labelText:'<a href="/rennes/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>LabFab de Rennes</b><br/><br/>\
+			<b>\
+				\
+					Rencontres<br/>\
+				</b>\
+				\
+					Lieu de rencontre suivant les ateliers et événements. Les ateliers les plus réguliers sont à la Maison des Associations de Rennes, 6 cours des Alliés, 35000 Rennes<br/>\
+				\
+					Fréquence des rencontres suivant les événements. Nous avons des temps d’accueil autour du Luftdaten tous les premiers vendredi midi du mois, de 12h30 à 13h30.<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href="mailto:contact@labfab.fr">Association LabFab</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="http://www.labfab.fr/">http://www.labfab.fr/</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [48.105196, -1.674618], { icon:
+            new labelRight(
+            { labelText:'<a href="/rennes2/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Capteurs citoyens & Qualité de l\'air (CCQA)</b><br/><br/>\
+			<b>\
+				\
+					Rencontres<br/>\
+				</b>\
+				\
+					<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href="luftdaten@mce-info.org">CCQA Rennes</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://twitter.com/ccqa_rennes">https://twitter.com/ccqa_rennes</a>\
+				<br />\
+			\
     ')
     .addTo(map)
     
@@ -118,21 +341,72 @@
 				\
 					<a href="mailto:rajko@codefor.de">Rajko Zschiegner</a><br/>\
 				\
-			<br />\
-		\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://luftdaten.info">https://luftdaten.info</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+    var labelRight = L.Icon.extend({
+        options: labelBaseOptions
+    });
+    
+    var marker = L.marker( [43.610157, 1.449872], { icon:
+            new labelRight(
+            { labelText:'<a href="/toulouse/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Appel d\'air / Association Reflets - CPIE Terres Toulousaines</b><br/><br/>\
+			<b>\
+				\
+					Rencontres<br/>\
+				</b>\
+				\
+					<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href="mailto:appeldair@cpieterrestoulousaines.org">Appel d\'air</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="http://cpieterrestoulousaines.org/">http://cpieterrestoulousaines.org/</a>\
+				<br />\
+			\
     ')
     .addTo(map)
     
     
     // load basemaps
     mapLayer.addTo(map);
+    map.addControl( new L.Control.Search({
+		url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
+		jsonpParam: 'json_callback',
+		propertyName: 'display_name',
+		propertyLoc: ['lat','lon'],
+		marker: false,
+		autoCollapse: true,
+		autoType: false,
+		minLength: 2,
+		zoom: 11
+	}) );
 });
 </script>
 
 
 
-    </div>
-  </div>
-
-</body>
+			</div>
+		</div>
+	</body>
 </html>

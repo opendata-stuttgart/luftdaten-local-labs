@@ -1,3 +1,9 @@
+<style>
+img.leaflet-tile {
+    filter: grayscale(85%) saturate(150%) hue-rotate(60deg) contrast(90%) brightness(110%);
+    -webkit-filter: grayscale(85%) saturate(150%) hue-rotate(60deg) contrast(90%) brightness(110%);
+}
+</style>
 <script>
     $(document).ready(function() {
     // initialize map, set position and zoom level
@@ -8,7 +14,7 @@
     var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
         minZoom: 1,
-        maxZoom:10
+        maxZoom:15
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
@@ -64,5 +70,16 @@
     {% endfor %}
     // load basemaps
     mapLayer.addTo(map);
+    map.addControl( new L.Control.Search({
+		url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
+		jsonpParam: 'json_callback',
+		propertyName: 'display_name',
+		propertyLoc: ['lat','lon'],
+		marker: false,
+		autoCollapse: true,
+		autoType: false,
+		minLength: 2,
+		zoom: 11
+	}) );
 });
 </script>
