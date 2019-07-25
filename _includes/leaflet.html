@@ -32,7 +32,7 @@ img.leaflet-tile {
     var labelRight = L.Icon.extend({
         options: labelBaseOptions
     });
-    
+
     var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
             new labelRight(
             { labelText:'<a href="/{{ lab.key }}/">{{ lab.lab }}</a>'}), riseOnHover: true })
