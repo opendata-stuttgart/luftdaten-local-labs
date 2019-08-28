@@ -1,0 +1,17 @@
+---
+key: aberdeen
+title: Air Aberdeen
+lat: 57.148041
+long: -2.101436
+
+meetings_title: Meetings
+contacts_title: Contact
+
+meetings:
+- text: bi-monthly, ONE Tech Hub, Schoolhill, Aberdeen AB10 1FR
+
+
+contacts:
+- url: mailto:info@airaberdeen.org 
+
+website: https://airaberdeen.org
