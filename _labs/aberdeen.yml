@@ -10,8 +10,8 @@ contacts_title: Contact
 meetings:
 - text: bi-monthly, ONE Tech Hub, Schoolhill, Aberdeen AB10 1FR
 
-
 contacts:
-- url: mailto:info@airaberdeen.org 
+- name: info@airaberdeen.org
+  url: mailto:info@airaberdeen.org
 
 website: https://airaberdeen.org
