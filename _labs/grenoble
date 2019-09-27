@@ -1,0 +1,18 @@
+---
+key: grenoble
+title: Enairgie-commune
+lat: 45.187582
+long: 5.704925
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+meetings:
+- text:Permanence mensuelle le dernier lundi du mois de 18 heures à 20 heures à la <a href="https://turbine.coop/">turbine.coop</a>.
+- text:Ateliers de montage au fablab la <a href="https://fablab.lacasemate.fr/">Casemate</a>.
+
+contacts:
+- name: Enairgie-commune 
+  url: contact@enairgie-commune.fr
+
+website: https://enairgie-commune.frama.site
