@@ -8,8 +8,8 @@ meetings_title: Rencontres
 contacts_title: Contact
 
 meetings:
-- text: Permanence mensuelle le dernier lundi du mois de 18 heures à 20 heures à la <a href="https://turbine.coop/">turbine.coop</a>.
-- text: Ateliers de montage au fablab la <a href="https://fablab.lacasemate.fr/">Casemate</a>.
+- text: Permanence mensuelle le dernier lundi du mois de 18 heures à 20 heures à la <a href=\"https://turbine.coop/\">turbine.coop</a>.
+- text: Ateliers de montage au fablab la <a href=\"https://fablab.lacasemate.fr/\">Casemate</a>.
 
 contacts:
 - name: Enairgie-commune 

@@ -36,8 +36,8 @@ img.leaflet-tile {
 
     var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
             new labelRight(
-            { labelText:'<a href="/{{ lab.key }}/">{{ lab.lab }}</a>'}), riseOnHover: true })
-			.bindPopup('<b>{{ lab.title }}</b><br/><br/>\
+            { labelText:"<a href=\"/{{ lab.key }}/\">{{ lab.lab }}</a>"}), riseOnHover: true })
+			.bindPopup("<b>{{ lab.title }}</b><br/><br/>\
 			{% if lab.meetings %}<b>\
 				{% if lab.meetings_title %}\
 					{{ lab.meetings_title }}<br/>\
@@ -56,16 +56,16 @@ img.leaflet-tile {
 					Contacts:<br/>\
 				{% endif %}</b>\
 				{% for contact in lab.contacts %}\
-					<a href="{{ contact.url }}">{{ contact.name }}</a><br/>\
+					<a href=\"{{ contact.url }}\">{{ contact.name }}</a><br/>\
 				{% endfor %}\
 				<br />\
 			{% endif %}\
 			{% if lab.website%}\
 				<b>Website</b><br/>\
-				<a href="{{ lab.website }}">{{ lab.website }}</a>\
+				<a href=\"{{ lab.website }}\">{{ lab.website }}</a>\
 				<br />\
 			{% endif %}\
-    ')
+    ")
     .addTo(map)
     {% endif%}
     {% endfor %}
