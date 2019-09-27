@@ -27,11 +27,12 @@ img.leaflet-tile {
         popupAnchor:  [-0, -35]
     };
     // load markers and put on map
-    {% for lab in site.labs %}
-    {% if lab.lat and lab.long %}
     var labelRight = L.Icon.extend({
         options: labelBaseOptions
     });
+
+    {% for lab in site.labs %}
+    {% if lab.lat and lab.long %}
 
     var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
             new labelRight(

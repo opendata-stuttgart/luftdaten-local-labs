@@ -61,12 +61,46 @@ img.leaflet-tile {
         popupAnchor:  [-0, -35]
     };
     // load markers and put on map
-    
-    
     var labelRight = L.Icon.extend({
         options: labelBaseOptions
     });
+
     
+    
+
+    var marker = L.marker( [57.148041, -2.101436], { icon:
+            new labelRight(
+            { labelText:'<a href="/aberdeen/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Air Aberdeen</b><br/><br/>\
+			<b>\
+				\
+					Meetings<br/>\
+				</b>\
+				\
+					bi-monthly, ONE Tech Hub, Schoolhill, Aberdeen AB10 1FR<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href="mailto:info@airaberdeen.org">info@airaberdeen.org</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://airaberdeen.org">https://airaberdeen.org</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
+    
+    
+    
+
     var marker = L.marker( [50.845369, 4.357297], { icon:
             new labelRight(
             { labelText:'<a href="/civic_lab_brussels/"></a>'}), riseOnHover: true })
@@ -99,10 +133,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [50.871701, 4.331662], { icon:
             new labelRight(
             { labelText:'<a href="/brussels_les_chercheurs_d\'air/"></a>'}), riseOnHover: true })
@@ -135,10 +166,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [-33.976499, 18.466334], { icon:
             new labelRight(
             { labelText:'<a href="/cape-town/"></a>'}), riseOnHover: true })
@@ -171,10 +199,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [44.493889, 11.342778], { icon:
             new labelRight(
             { labelText:'<a href="/centraline_dal_basso/"></a>'}), riseOnHover: true })
@@ -199,10 +224,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [50.7822998, 0.2532976], { icon:
             new labelRight(
             { labelText:'<a href="/Eastbourne/"></a>'}), riseOnHover: true })
@@ -235,10 +257,42 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
+
+    var marker = L.marker( [45.187582, 5.704925], { icon:
+            new labelRight(
+            { labelText:'<a href="/grenoble/"></a>'}), riseOnHover: true })
+			.bindPopup('<b>Enairgie-commune</b><br/><br/>\
+			<b>\
+				\
+					Rencontres<br/>\
+				</b>\
+				\
+					Permanence mensuelle le dernier lundi du mois de 18 heures à 20 heures à la <a href="https://turbine.coop/">turbine.coop</a>.<br/>\
+				\
+					Ateliers de montage au fablab la <a href="https://fablab.lacasemate.fr/">Casemate</a>.<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href="contact@enairgie-commune.fr">Enairgie-commune</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href="https://enairgie-commune.frama.site">https://enairgie-commune.frama.site</a>\
+				<br />\
+			\
+    ')
+    .addTo(map)
     
+    
+    
+
     var marker = L.marker( [48.104917, -1.676223], { icon:
             new labelRight(
             { labelText:'<a href="/rennes/"></a>'}), riseOnHover: true })
@@ -273,10 +327,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [48.105196, -1.674618], { icon:
             new labelRight(
             { labelText:'<a href="/rennes2/"></a>'}), riseOnHover: true })
@@ -309,10 +360,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [48.77654, 9.1737], { icon:
             new labelRight(
             { labelText:'<a href="/stuttgart/"></a>'}), riseOnHover: true })
@@ -353,10 +401,7 @@ img.leaflet-tile {
     
     
     
-    var labelRight = L.Icon.extend({
-        options: labelBaseOptions
-    });
-    
+
     var marker = L.marker( [43.610157, 1.449872], { icon:
             new labelRight(
             { labelText:'<a href="/toulouse/"></a>'}), riseOnHover: true })
