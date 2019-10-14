@@ -1,8 +1,8 @@
 ---
 key: centraline_dal_basso
 title: Centraline dal Basso
-lat: 44.493889
-long: 11.342778
+lat: 44.79666599171243
+long: 10.332271908213215
 
 meetings_title:
 contacts_title:
@@ -10,7 +10,7 @@ contacts_title:
 meetings:
 
 contacts:
-- name: centralinedalbasso@protonmail.com
-  url: mailto:centralinedalbasso@protonmail.com
+- name: info@centralinedalbasso.org
+  url: mailto:info@centralinedalbasso.org
 
 website: https://www.facebook.com/Centralinedalbasso/
