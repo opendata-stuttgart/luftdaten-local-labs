@@ -3,8 +3,18 @@
 These are the source files for the map of local Luftdaten.info labs and contacts.
 
 ## Setup
+Install Ruby and GEM:
+https://jekyllrb.com/docs/installation/#guides
 
-You first need to install git Ruby and gem.
+Create Gemfile:
+```
+bundle init
+```
+
+inside the Gemfile add this line
+```
+gem "jekyll"
+```
 
 Then get the dependencies:
 ```
