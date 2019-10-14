@@ -1,0 +1,17 @@
+---
+key: offtopic_lab
+title: Laboratorio politico OffTopic
+lat: 45.486523
+long: 9.189885
+
+meetings_title: Incontri
+contacts_title: Contatti
+
+meetings:
+  - text: Ogni martedì collettivo. Per incontri specifici su centraline controllare il sito.
+
+contacts:
+  - name: offtopic@autoproduzioni.net
+    url: mailto:offtopic@autoproduzioni.net
+
+website: https://offtopiclab.org
