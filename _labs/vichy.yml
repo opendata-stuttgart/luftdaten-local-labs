@@ -1,0 +1,18 @@
+---
+key: vichy
+title: Monter son détecteur à Vichy 
+lat: 46.12696
+long: 3.430028
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+meetings:
+-  text: A convenir par email : possible sur Vichy ou par téléphone/vidéoconférence.
+-  text: Help can also be provided in English
+
+contacts:
+- name: Marie
+  url: zalpeg@gmail.com
+
+website: 
