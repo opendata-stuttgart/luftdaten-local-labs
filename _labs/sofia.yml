@@ -1,0 +1,17 @@
+---
+key: sofia
+title: AirBG.info
+lat: 42.625936
+long: 23.377578
+
+meetings_title: Meetings
+contacts_title: Contacts
+
+meetings:
+- text: Every month on 2-nd Thursday on request
+
+contacts:
+- name: hq@airbg.info
+  url: mailto:hq@airbg.info
+
+website: https://airbg.info
