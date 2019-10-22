@@ -1,0 +1,19 @@
+---
+key: moscow
+title: breathe.moscow
+lat: 55.68795
+long: 37.57484
+
+meetings_title: Мастерские
+contacts_title: Контакты
+
+meetings:
+- text: Ищите информацию о мастерских по сборке сенсоров на сайте проекта или в каналах телеграмма.
+- text: Внимание! Обязательно запишитесь на мастерскую, чтобы мы знали какое число человек ожидать!
+
+contacts:
+- text: Инфоканал в телеграмм: @breathemoscow
+- text: Группа в телеграмм: <a href=\"https://t.me/breathemos/a>
+- text: FB: <a href=\"fb.com/groups/breathemoscow/a>
+
+website: https://breathe.moscow/
