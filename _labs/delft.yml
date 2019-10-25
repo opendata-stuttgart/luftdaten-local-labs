@@ -1,0 +1,17 @@
+---
+key: delft
+title: Luchtwachters Delft
+lat: 52.0085556
+long: 4.3542587
+
+meetings_title: Meetings
+contacts_title: Contact
+
+meetings:
+- text: Interesse om eens langs te komen? Laat het ons weten!
+
+contacts:
+- name: Luchtwachters Delft
+  url: mailto:luftdaten@luchtwachtersdelft.nl
+
+website: https://luchtwachtersdelft.nl
