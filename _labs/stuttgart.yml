@@ -13,11 +13,9 @@ meetings:
 - text: weitere Infos auf <a href=\"https://www.meetup.com/de-DE/OK-Lab-Stuttgart-Meet-Up/\">Meetup</a>
 
 contacts:
-- name: Jan Lutz
-  url: mailto:jan@luftdaten.info
 - name: Lukas
-  url: mailto:lukas@luftdaten.info
+  url: mailto:lukas@sensor.community
 - name: Rajko Zschiegner
-  url: mailto:rajko@codefor.de
+  url: mailto:rajko@sensor.community
 
-website: https://luftdaten.info
+website: https://sensor.community
