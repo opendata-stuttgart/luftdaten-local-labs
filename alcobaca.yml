@@ -1,0 +1,17 @@
+---
+key: alcobaca
+title: Qualidade do ar Ciências Cidadãs Portugal
+lat: 39.55223
+long: -8.97749
+
+meetings_title: Reuniãos
+contacts_title: Contactos
+
+meetings:
+- text: Em breve
+
+contacts:
+- name: Qualidade do ar
+  url: mailto:info@qualidadedoar.pt
+
+website: http://www.qualidadedoar.pt
