@@ -1,0 +1,21 @@
+---
+key: bilthoven
+title: samen meten
+lat: 52.118724 
+long: 5.188987
+
+meetings_title: Meetings
+contacts_title: Kontakte
+
+meetings:
+- text: 
+- text: 
+- text: 
+
+contacts:
+- name: Samenmeten team
+  url: mailto:samenmeten@rivm.nl
+- name:
+  url: 
+
+website: https://www.samenmeten.nl/
