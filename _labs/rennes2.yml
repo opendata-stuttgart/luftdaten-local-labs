@@ -1,6 +1,6 @@
 ---
 key: rennes2
-title: Capteurs citoyens & Qualité de l'air (CCQA)
+title: Capteurs Citoyens & Environnement
 lat: 48.105196
 long: -1.674618
 
@@ -11,7 +11,7 @@ meetings:
 - text: Chaque premier jeudi du mois à 17.30 aux Champs libres dans le cadre des rendez-vous 4C.
 
 contacts:
-- name: CCQA Rennes 
+- name: Capteurs Citoyens & Environnement 
   url: mailto:luftdaten@mce-info.org 
 
 website: https://twitter.com/ccqa_rennes
