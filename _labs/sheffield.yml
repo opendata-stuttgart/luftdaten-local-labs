@@ -7,9 +7,9 @@ contacts_title: Contact
 
 contacts:
 - name: Graham Turnbull
-  url: graham.turnbull@mac.com
+  url: mailto:graham.turnbull@mac.com
 
 - name: Rohit Chakraborty
-  url: rohit.chakraborty@sheffield.ac.uk 
+  url: mailto:rohit.chakraborty@sheffield.ac.uk 
 
 website: https://facebook.com/groups/CleanAirSheffield/
