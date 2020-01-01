@@ -3,7 +3,11 @@ title: Clean Air for Sheffield
 lat: 53.382038
 long: -1.478898
 
+meetings_title: Meetings
 contacts_title: Contact
+
+meetings:
+- text:
 
 contacts:
 - name: Graham Turnbull
