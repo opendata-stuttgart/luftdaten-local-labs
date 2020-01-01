@@ -7,9 +7,6 @@ long: -1.478898
 meetings_title: Meetings
 contacts_title: Contact
 
-meetings:
-- text:
-
 contacts:
 - name: Graham Turnbull
   url: mailto:graham.turnbull@mac.com
