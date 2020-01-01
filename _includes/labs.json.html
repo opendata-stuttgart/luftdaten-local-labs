@@ -2,6 +2,6 @@
 	{ {% if lab.lat and lab.long %}
 		"lat": {{ lab.lat }},
 		"lon": {{ lab.long }},
-		"text": "<b>{{ lab.title }}</b><br/><br/>{% if lab.meetings %}<b>{% if lab.meetings_title %}{{ lab.meetings_title }}{% else %}Meetings:{% endif %}</b><br/>{% for meeting in lab.meetings %}{{ meeting.text }}<br/>{% endfor %}<br />{% endif %}{% if lab.contacts %}<b>{% if lab.contacts_title %}{{ lab.contacts_title }}<br/>{% else %}Contacts:<br/>{% endif %}</b>{% for contact in lab.contacts %}<a href=\"{{ contact.url }}\">{{ contact.name }}</a><br/>{% endfor %}<br />{% endif %}{% if lab.website%}<b>Website</b><br/><a href=\"{{ lab.website }}\">{{ lab.website }}</a><br />{% endif %}"{% endif%}
+		"text": "<b>{{ lab.title }}</b><br/><br/>{% if lab.meetings %}<b>{% if lab.meetings_title %}{{ lab.meetings_title }}{% else %}Meetings:{% endif %}</b><br/>{% for meeting in lab.meetings %}{{ meeting.text }}<br/>{% endfor %}<br />{% endif %}{% if lab.contacts %}<b>{% if lab.contacts_title %}{{ lab.contacts_title }}<br/>{% else %}Contacts:<br/>{% endif %}</b>{% for contact in lab.contacts %}<a href=\"{{ contact.url }}\">{{ contact.name }}</a><br/>{% endfor %}<br />{% endif %}{% if lab.website %}<b>Website</b><br/><a href=\"{{ lab.website }}\">{{ lab.website }}</a><br />{% endif %}"{% endif%}
 	}{% if forloop.last == false %},{% endif %}
 {% endfor %}]
