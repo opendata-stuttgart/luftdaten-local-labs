@@ -1,0 +1,18 @@
+---
+key: betamachine
+title: BetaMachine HS
+lat: 48.4409
+long: 1.49305
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+Rencontres:
+- text: Le troisième samedi du mois de 14h à 18h au 15 rue Victor Gilbert, à Chartres
+- text: Le Samedi 25 janvier 2019 de 14h à 18h : Montage de station Luftdaten.
+
+contacts:
+- name: Adrien SOISSONS
+  url: mailto:contact@betamachine.fr
+
+website: http://betamachine.fr
