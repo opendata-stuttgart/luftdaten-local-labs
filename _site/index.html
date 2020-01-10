@@ -291,6 +291,31 @@ img.leaflet-tile {
     
     
 
+    var marker = L.marker( [48.4409, 1.49305], { icon:
+            new labelRight(
+            { labelText:"<a href=\"/betamachine/\"></a>"}), riseOnHover: true })
+			.bindPopup("<b>BetaMachine HS</b><br/><br/>\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href=\"mailto:contact@betamachine.fr\">Adrien SOISSONS</a><br/>\
+				\
+				<br />\
+			\
+			\
+				<b>Website</b><br/>\
+				<a href=\"http://betamachine.fr\">http://betamachine.fr</a>\
+				<br />\
+			\
+    ")
+    .addTo(map)
+    
+    
+    
+
     var marker = L.marker( [52.0085556, 4.3542587], { icon:
             new labelRight(
             { labelText:"<a href=\"/delft/\"></a>"}), riseOnHover: true })
