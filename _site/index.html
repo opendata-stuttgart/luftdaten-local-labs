@@ -14,11 +14,11 @@
 
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-		<script src="https://maps.luftdaten.info/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maps.sensor.community/jquery/3.3.1/jquery.min.js"></script>
 
 		<!-- leaflet map -->
-		<link rel="stylesheet" href="https://maps.luftdaten.info/leaflet/leaflet@1.3.4/dist/leaflet.css">
-		<script src="https://maps.luftdaten.info/leaflet/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
+		<link rel="stylesheet" href="https://maps.sensor.community/leaflet/leaflet@1.3.4/dist/leaflet.css">
+		<script src="https://maps.sensor.community/leaflet/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
 
 		<link rel="stylesheet" href="search/leaflet-search.css" />
 		<script src="search/leaflet-search.js"></script>
@@ -127,6 +127,35 @@ img.leaflet-tile {
 				<b>Website</b><br/>\
 				<a href=\"http://www.qualidadedoar.pt\">http://www.qualidadedoar.pt</a>\
 				<br />\
+			\
+    ")
+    .addTo(map)
+    
+    
+    
+
+    var marker = L.marker( [45.587754, 5.276368], { icon:
+            new labelRight(
+            { labelText:"<a href=\"/bourgoinj/\"></a>"}), riseOnHover: true })
+			.bindPopup("<b>Collectif Nord Is\'Air</b><br/><br/>\
+			<b>\
+				\
+					Rencontres<br/>\
+				</b>\
+				\
+					Rencontres mensuelles au local UFC-Que Choisir de Bourgoin-Jallieu (27, rue Bovier-Lapierre 38300 Bourgoin-Jallieu)<br/>\
+				\
+				<br />\
+			\
+			<b>\
+				\
+					Contact<br/>\
+				</b>\
+				\
+					<a href=\"mailto:contactnordisair@gmail.com\">Bruno Jacquet</a><br/>\
+				\
+				<br />\
+			\
 			\
     ")
     .addTo(map)
