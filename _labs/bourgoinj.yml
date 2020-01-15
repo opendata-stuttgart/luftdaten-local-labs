@@ -1,0 +1,14 @@
+key: bourgoinj
+title: Collectif Nord Is'Air
+lat: 45.587754
+long: 5.276368
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+meetings:
+- text: Rencontres mensuelles au local UFC-Que Choisir de Bourgoin-Jallieu (27, rue Bovier-Lapierre 38300 Bourgoin-Jallieu)
+
+contacts:
+- name: Bruno Jacquet 
+  url: mailto:contactnordisair@gmail.com
