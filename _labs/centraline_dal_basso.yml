@@ -1,11 +1,11 @@
 ---
 key: centraline_dal_basso
 title: Centraline dal Basso
-lat: 44.79666599171243
-long: 10.332271908213215
+lat: 44.796666
+long: 10.332272
 
-meetings_title:
-contacts_title:
+meetings_title: Meeting
+contacts_title: Contatto
 
 meetings:
 

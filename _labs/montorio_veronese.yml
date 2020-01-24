@@ -1,0 +1,16 @@
+---
+key: montorio_veronese
+title: Associazione Montorioveronese.it
+lat: 45.457801
+long: 11.062921
+
+meetings_title: Meetings
+contacts_title: Contatto
+
+meetings:
+
+contacts:
+- name: info@montorioveronese.it
+  url: mailto:info@montorioveronese.it
+
+website: http://www.montorioveronese.it
