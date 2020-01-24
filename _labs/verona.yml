@@ -1,0 +1,17 @@
+---
+key: comitato_di_verona_sud
+title: Comitato di Verona Sud
+lat: 45.4134
+long: 10.9793
+
+meetings_title: Incontri
+contacts_title: Contatti
+
+meetings:
+  - text: Ogni mercoledì ci riuniamo per parlare di argomenti vari.
+
+contacts:
+  - name: comitatovrsud@gmail.com
+    url: mailto:comitatovrsud@gmail.com
+
+website: https://www.facebook.com/comitatovrsud/
