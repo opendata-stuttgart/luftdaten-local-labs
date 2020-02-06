@@ -1,6 +1,6 @@
 ---
 key: malaga
-title: Malaga-LAB
+title: Málaga-LAB
 lat: 36.691196
 long: -4.448617
 
@@ -8,8 +8,8 @@ meetings_title: Meetings
 contacts_title: Contact
 
 meetings:
-- text: En Malaga-LAB podemos ayudarte a montar tu propio sensor de Partículas y unirte a este moviendo de ciencia ciudadana, para conocer en tiempo real la calidad del aire de nuestra ciudad.
-- text: Ponte en contacto con nosotros a través de la dirección de correo de malaga-lab.
+- text: En Malaga-LAB podemos ayudarte a montar tu propio sensor de Partículas y asi unirte a este moviento de ciencia ciudadana, para conocer en tiempo real la calidad del aire de nuestra ciudad.
+- text: Para concretrar cita envianos un correo al contacto.
 
 contacts:
 - name: Carlos Guevara
