@@ -1,0 +1,18 @@
+---
+key: mendoza
+title: Lab Instrumental (FIng - UNCuyo)
+lat: -32.87866200000
+long: -68.87673500000
+
+meetings_title: Encuentro
+contacts_title: Contacto
+
+meetings:
+- text: En el Laboratorio de Análisis Instrumental de la Facultad de Ingenieria te podemos ayudar a construir tu propio sensor
+- text: podes ponerte en contacto con nosotros a traves de nuestro correo
+
+contacts:
+- name: Nano
+  url: mailto:ferhcastro@gmail.com
+
+website: https://gitlab.com/nanocastro/monitoreoabierto/
