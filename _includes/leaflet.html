@@ -30,7 +30,7 @@ img.leaflet-tile {
         options: labelBaseOptions
     });
 
-	fetch('/labs.json')
+	fetch('labs.json')
 		.then(response => response.json())
 		.then(data => {
 			data.forEach( function(lab,index) {
