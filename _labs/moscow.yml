@@ -13,10 +13,13 @@ meetings:
 
 contacts:
 - name: Инфоканал в телеграмм&#58; @breathemoscow
-  url: tg://resolve?domain=breathemoscow
+  url: https://t.me/breathemoscow
 - name: Группа в телеграмм&#58; https&#58;//t.me/breathemos
   url: https://t.me/breathemos
 - name: Facebook&#58; https&#58;//fb.com/groups/breathemoscow/
   url: https://fb.com/groups/breathemoscow/
 
 website: https://breathe.moscow/
+facebook_group: breathemoscow
+telegram: breathemoscow
+telegram_group: breathemos

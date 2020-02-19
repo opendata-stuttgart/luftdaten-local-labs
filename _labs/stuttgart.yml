@@ -4,6 +4,7 @@ title: Lab Stuttgart
 lat: 48.776540
 long: 9.173700
 
+# translations for titles
 meetings_title: Meetings
 contacts_title: Kontakte
 
@@ -12,10 +13,26 @@ meetings:
 - text: jeden 4. Dienstag im Monat in der <a href=\"http://www1.stuttgart.de/stadtbibliothek/\">Stadtbibliothek</a>
 - text: weitere Infos auf <a href=\"https://www.meetup.com/de-DE/OK-Lab-Stuttgart-Meet-Up/\">Meetup</a>
 
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
 contacts:
 - name: Lukas
   url: mailto:lukas@sensor.community
 - name: Rajko Zschiegner
   url: mailto:rajko@sensor.community
 
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
 website: https://sensor.community
+facebook:
+facebook_group:
+facebook_page:
+twitter: SensorCommunity
+github: opendata-stuttgart
+gitlab:
+mastodon: https://fosstodon.org/@SensorCommunity
+meetup: OK-Lab-Stuttgart-Meet-Up
+telegram:
+telegram_group:
+

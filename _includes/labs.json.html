@@ -2,6 +2,26 @@
 	{ {% if lab.lat and lab.long %}
 		"lat": {{ lab.lat }},
 		"lon": {{ lab.long }},
-		"text": "<b>{{ lab.title }}</b><br/><br/>{% if lab.meetings %}<b>{% if lab.meetings_title %}{{ lab.meetings_title }}{% else %}Meetings:{% endif %}</b><br/>{% for meeting in lab.meetings %}{{ meeting.text }}<br/>{% endfor %}<br />{% endif %}{% if lab.contacts %}<b>{% if lab.contacts_title %}{{ lab.contacts_title }}<br/>{% else %}Contacts:<br/>{% endif %}</b>{% for contact in lab.contacts %}<a href=\"{{ contact.url }}\">{{ contact.name }}</a><br/>{% endfor %}<br />{% endif %}{% if lab.website %}<b>Website</b><br/><a href=\"{{ lab.website }}\">{{ lab.website }}</a><br />{% endif %}"{% endif%}
-	}{% if forloop.last == false %},{% endif %}
+		"title": "{{ lab.title }}",
+		"text": "<b>{{ lab.title }}</b><br/><br/>{% if lab.meetings %}<b>{% if lab.meetings_title %}{{ lab.meetings_title }}{% else %}Meetings:{% endif %}</b><br/>{% for meeting in lab.meetings %}{{ meeting.text }}<br/>{% endfor %}<br />{% endif %}{% if lab.contacts %}<b>{% if lab.contacts_title %}{{ lab.contacts_title }}<br/>{% else %}Contacts:<br/>{% endif %}</b>{% for contact in lab.contacts %}<a href=\"{{ contact.url }}\" class=\"labs_contact\">{{ contact.name }}</a><br/>{% endfor %}<br />{% endif %}{% if lab.website %}<b>Website</b><br/><a href=\"{{ lab.website }}\" class=\"labs_website\">{{ lab.website }}</a><br />{% endif %}"{% endif%},
+		"meetings_title": "{% if lab.meetings_title %}{{ lab.meetings_title }}{% else %}Meetings{% endif %}",
+		"meetings":[{% for meeting in lab.meetings %}
+			{ "text": "{{ meeting.text }}"}{% if forloop.last == false %},{% endif %}{% endfor %}
+		]
+		{% if lab.contacts %},"contacts_title": {% if lab.contacts_title %}"{{ lab.contacts_title }}"{% else %}"Contacts"{% endif %},
+		"contacts":[
+			{% for contact in lab.contacts %}{ "name": "{{ contact.name }}", "url": "{{ contact.url }}" }{% if forloop.last == false %}, {% endif %}{% endfor %}
+		]{% endif %}
+{% if lab.website %},"website": "{{ lab.website }}"
+{% endif %}{% if lab.facebook %},"facebook": "{{ lab.facebook }}"
+{% endif %}{% if lab.facebook_group %},"facebook_group": "{{ lab.facebook_group }}"
+{% endif %}{% if lab.facebook_page %},"facebook_page": "{{ lab.facebook_page }}"
+{% endif %}{% if lab.twitter %},"twitter": "{{ lab.twitter }}"
+{% endif %}{% if lab.github %},"github": "{{ lab.github }}"
+{% endif %}{% if lab.gitlab %},"gitlab": "{{ lab.gitlab }}"
+{% endif %}{% if lab.mastodon %},"mastodon": "{{ lab.mastodon }}"
+{% endif %}{% if lab.meetup %},"meetup": "{{ lab.meetup }}"
+{% endif %}{% if lab.telegram %},"telegram": "{{ lab.telegram }}"
+{% endif %}{% if lab.telegram_group %},"telegram_group": "{{ lab.telegram_group }}"
+{% endif %}	}{% if forloop.last == false %},{% endif %}
 {% endfor %}]

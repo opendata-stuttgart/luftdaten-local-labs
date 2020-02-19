@@ -2,7 +2,6 @@
 img.leaflet-tile {
     filter: grayscale(85%) saturate(150%) hue-rotate(60deg) contrast(90%) brightness(110%);
     -webkit-filter: grayscale(85%) saturate(150%) hue-rotate(60deg) contrast(90%) brightness(110%);
-}
 </style>
 <script>
     $(document).ready(function() {
@@ -31,44 +30,83 @@ img.leaflet-tile {
         options: labelBaseOptions
     });
 
-    {% for lab in site.labs %}
-    {% if lab.lat and lab.long %}
+	fetch('/labs.json')
+		.then(response => response.json())
+		.then(data => {
+			data.forEach( function(lab,index) {
+				var lab_popuptext = "<b>"+lab.title+"</b><br/><br/>";
+				if (typeof lab.meetings != 'undefined') {
+					lab_popuptext += "<b>";
+					if (typeof lab.meetings_title != 'undefined') {
+						lab_popuptext += lab.meetings_title;
+					} else {
+						lab_popuptext += "Meetings";
+					}
+					lab_popuptext += "<br /></b>";
+					lab.meetings.forEach( function(meeting,index) {
+						lab_popuptext += meeting.text+"<br />";
+					});
+					lab_popuptext += "<br />";
+				}
+				if (typeof lab.contacts != 'undefined') {
+					lab_popuptext += "<b>";
+					if (typeof lab.contacts_title != 'undefined') {
+						lab_popuptext += lab.contacts_title;
+					} else {
+						lab_popuptext += "Contacts";
+					}
+					lab_popuptext += "<br /></b>";
+					lab.contacts.forEach( function(contact,index) {
+						lab_popuptext += "<a href=\""+contact.url+"\">"+contact.name+"</a><br />";
+					});
+					lab_popuptext += "<br />";
+				}
+				if (typeof lab.website != 'undefined') {
+					lab_popuptext += "<b>Website</b><br/>";
+					lab_popuptext += "<a href='"+lab.website+"' target='_blank' rel='noreferrer'>"+lab.website+"</a><br /><br />";
+				}
+				if (typeof lab.facebook != 'undefined') {
+					lab_popuptext += "<a href='https://www.facebook.com/"+lab.website+"' class='labs_facebook' target='_blank' rel='noreferrer'>"+lab.facebook+"</a><br />";
+				}
+				if (typeof lab.facebook_group != 'undefined') {
+					lab_popuptext += "<a href='https://www.facebook.com/groups/"+lab.facebook_group+"' class='labs_facebook' target='_blank' rel='noreferrer'>"+lab.facebook_group+"</a> (group)<br />";
+				}
+				if (typeof lab.facebook_page != 'undefined') {
+					lab_popuptext += "<a href='https://www.facebook.com/"+lab.facebook_page+"' class='labs_facebook' target='_blank' rel='noreferrer'>"+lab.facebook_page+"</a> (page)<br />";
+				}
+				if (typeof lab.twitter != 'undefined') {
+					lab_popuptext += "<a href='https://twitter.com/"+lab.twitter+"' class='labs_twitter' target='_blank' rel='noreferrer'>@"+lab.twitter+"</a><br />";
+				}
+				if (typeof lab.github != 'undefined') {
+					lab_popuptext += "<a href='https://github.com/"+lab.github+"' class='labs_github' target='_blank' rel='noreferrer'>"+lab.github+"</a><br />";
+				}
+				if (typeof lab.gitlab != 'undefined') {
+					lab_popuptext += "<a href='https://gitlab.com/"+lab.gitlab+"' class='labs_gitlab' target='_blank' rel='noreferrer'>"+lab.gitlab+"</a><br />";
+				}
+				if (typeof lab.github != 'undefined') {
+					lab_popuptext += "<a href='"+lab.mastodon+"' class='labs_mastodon' target='_blank' rel='noreferrer'>"+lab.mastodon+"</a><br />";
+				}
+				if (typeof lab.meetup != 'undefined') {
+					lab_popuptext += "<a href='https://www.meetup.com/"+lab.meetup+"' class='labs_meetup' target='_blank' rel='noreferrer'>"+lab.meetup+"</a><br />";
+				}
+				if (typeof lab.telegram != 'undefined') {
+					lab_popuptext += "<a href='https://t.me/"+lab.telegram+"' class='labs_telegram' target='_blank' rel='noreferrer'>@"+lab.telegram+"</a><br />";
+				}
+				if (typeof lab.telegram_group != 'undefined') {
+					lab_popuptext += "<a href='https://t.me/"+lab.telegram_group+"' class='labs_telegram' target='_blank' rel='noreferrer'>"+lab.telegram_group+"</a> (group)<br />";
+				}
+				lab_popuptext += "<br />Your location is missing? Add it <a href='https://github.com/opendata-stuttgart/luftdaten-local-labs' target='_blank' rel='noreferrer'>here</a>."
+				var marker = L.marker(
+						[lab.lat, lab.lon],
+						{ icon:	new labelRight(
+							{ labelText:"<a href=\""+lab.key+"/\">"+lab.lab+"</a>"}
+							), riseOnHover: true }
+						)
+					.bindPopup(lab_popuptext)
+					.addTo(map)
+			});
+		});
 
-    var marker = L.marker( [{{ lab.lat }}, {{ lab.long }}], { icon:
-            new labelRight(
-            { labelText:"<a href=\"/{{ lab.key }}/\">{{ lab.lab }}</a>"}), riseOnHover: true })
-			.bindPopup("<b>{{ lab.title }}</b><br/><br/>\
-			{% if lab.meetings %}<b>\
-				{% if lab.meetings_title %}\
-					{{ lab.meetings_title }}<br/>\
-				{% else %}\
-					Meetings:<br/>\
-				{% endif %}</b>\
-				{% for meeting in lab.meetings %}\
-					{{ meeting.text }}<br/>\
-				{% endfor %}\
-				<br />\
-			{% endif %}\
-			{% if lab.contacts %}<b>\
-				{% if lab.contacts_title %}\
-					{{ lab.contacts_title }}<br/>\
-				{% else %}\
-					Contacts:<br/>\
-				{% endif %}</b>\
-				{% for contact in lab.contacts %}\
-					<a href=\"{{ contact.url }}\">{{ contact.name }}</a><br/>\
-				{% endfor %}\
-				<br />\
-			{% endif %}\
-			{% if lab.website%}\
-				<b>Website</b><br/>\
-				<a href=\"{{ lab.website }}\">{{ lab.website }}</a>\
-				<br />\
-			{% endif %}\
-    ")
-    .addTo(map)
-    {% endif%}
-    {% endfor %}
     // load basemaps
     mapLayer.addTo(map);
     map.addControl( new L.Control.Search({
