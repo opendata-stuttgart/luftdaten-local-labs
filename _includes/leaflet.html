@@ -65,36 +65,38 @@ img.leaflet-tile {
 					lab_popuptext += "<b>Website</b><br/>";
 					lab_popuptext += "<a href='"+lab.website+"' target='_blank' rel='noreferrer'>"+lab.website+"</a><br /><br />";
 				}
+				lab_popuptext += "<table class='labs_sociallinks'>";
 				if (typeof lab.facebook != 'undefined') {
-					lab_popuptext += "<a href='https://www.facebook.com/"+lab.website+"' class='labs_facebook' target='_blank' rel='noreferrer'>"+lab.facebook+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_facebook'>Facebook: </td><td><a href='https://www.facebook.com/"+lab.website+"' target='_blank' rel='noreferrer'>"+lab.facebook+"</a></td></tr>";
 				}
 				if (typeof lab.facebook_group != 'undefined') {
-					lab_popuptext += "<a href='https://www.facebook.com/groups/"+lab.facebook_group+"' class='labs_facebook' target='_blank' rel='noreferrer'>"+lab.facebook_group+"</a> (group)<br />";
+					lab_popuptext += "<tr><td class='labs_facebook'>Facebook group: </td><td><a href='https://www.facebook.com/groups/"+lab.facebook_group+"' target='_blank' rel='noreferrer'>"+lab.facebook_group+"</a></td></tr>";
 				}
 				if (typeof lab.facebook_page != 'undefined') {
-					lab_popuptext += "<a href='https://www.facebook.com/"+lab.facebook_page+"' class='labs_facebook' target='_blank' rel='noreferrer'>"+lab.facebook_page+"</a> (page)<br />";
+					lab_popuptext += "<tr><td class='labs_facebook'>Facebook page: </td><td><a href='https://www.facebook.com/"+lab.facebook_page+"' target='_blank' rel='noreferrer'>"+lab.facebook_page+"</a></td></tr>";
 				}
 				if (typeof lab.twitter != 'undefined') {
-					lab_popuptext += "<a href='https://twitter.com/"+lab.twitter+"' class='labs_twitter' target='_blank' rel='noreferrer'>@"+lab.twitter+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_twitter'>Twitter: </td><td><a href='https://twitter.com/"+lab.twitter+"' target='_blank' rel='noreferrer'>@"+lab.twitter+"</a></td></tr>";
 				}
 				if (typeof lab.github != 'undefined') {
-					lab_popuptext += "<a href='https://github.com/"+lab.github+"' class='labs_github' target='_blank' rel='noreferrer'>"+lab.github+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_github'>github: </td><td><a href='https://github.com/"+lab.github+"' target='_blank' rel='noreferrer'>"+lab.github+"</a></td></tr>";
 				}
 				if (typeof lab.gitlab != 'undefined') {
-					lab_popuptext += "<a href='https://gitlab.com/"+lab.gitlab+"' class='labs_gitlab' target='_blank' rel='noreferrer'>"+lab.gitlab+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_gitlab'>Gitlab: </td><td><a href='https://gitlab.com/"+lab.gitlab+"' target='_blank' rel='noreferrer'>"+lab.gitlab+"</a></td></tr>";
 				}
 				if (typeof lab.github != 'undefined') {
-					lab_popuptext += "<a href='"+lab.mastodon+"' class='labs_mastodon' target='_blank' rel='noreferrer'>"+lab.mastodon+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_mastodon'>Mastodon: </td><td><a href='"+lab.mastodon+"' target='_blank' rel='noreferrer'>"+lab.mastodon+"</a></td></tr>";
 				}
 				if (typeof lab.meetup != 'undefined') {
-					lab_popuptext += "<a href='https://www.meetup.com/"+lab.meetup+"' class='labs_meetup' target='_blank' rel='noreferrer'>"+lab.meetup+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_meetup'>Meetup: </td><td><a href='https://www.meetup.com/"+lab.meetup+"' target='_blank' rel='noreferrer'>"+lab.meetup+"</a></td><tr>";
 				}
 				if (typeof lab.telegram != 'undefined') {
-					lab_popuptext += "<a href='https://t.me/"+lab.telegram+"' class='labs_telegram' target='_blank' rel='noreferrer'>@"+lab.telegram+"</a><br />";
+					lab_popuptext += "<tr><td class='labs_telegram'>Telegram: </td><td><a href='https://t.me/"+lab.telegram+"' target='_blank' rel='noreferrer'>@"+lab.telegram+"</a></td></tr>";
 				}
 				if (typeof lab.telegram_group != 'undefined') {
-					lab_popuptext += "<a href='https://t.me/"+lab.telegram_group+"' class='labs_telegram' target='_blank' rel='noreferrer'>"+lab.telegram_group+"</a> (group)<br />";
+					lab_popuptext += "<tr><td class='labs_telegram'>Telegram group: </td><td><a href='https://t.me/"+lab.telegram_group+"' target='_blank' rel='noreferrer'>"+lab.telegram_group+"</a></td></tr>";
 				}
+				lab_popuptext += "</table>";
 				lab_popuptext += "<br />Your location is missing? Add it <a href='https://github.com/opendata-stuttgart/luftdaten-local-labs' target='_blank' rel='noreferrer'>here</a>."
 				var marker = L.marker(
 						[lab.lat, lab.lon],

@@ -30,3 +30,8 @@ bundler exec jekyll serve
 ## Add new lab
 
 Go to the folder _labs, create a copy of stuttgart.yml. Rename it (name of city as filename prefered) and make your changes.
+
+### Icons used
+Simple icons:
+https://github.com/simple-icons/simple-icons
+https://simpleicons.org/
