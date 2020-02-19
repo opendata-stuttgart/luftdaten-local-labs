@@ -1,0 +1,22 @@
+---
+key: Warsaw
+title: Koduj dla Polski
+lat: 52.237049
+long: 21.017532
+
+meetings_title: Warsztaty
+contacts_title: Kontakt
+
+meetings:
+- text: W Polsce czujniki Sensor.community (Luftdaten), promowane są przez partnerstwo składające się z <a href=\"https://kodujdlapolski.pl/\">Koduj dla Polski</a> (Fundacja ePaństwo)<a href=\"https://alarmsmogowy.pl/\">, Warszawskiego Alarmu Smogowego</a>, dostawcy sprzętu <a href=\"https://nettigo.pl/\">Nettigo</a> oraz aktywistek i aktywistów z całej Polski. <br>
+
+- text: Informacja o warsztatach <a href=\"https://www.facebook.com/pg/KodujDlaPolski/events/\">Fanpage Koduj dla Polski</a>
+- text: Dyskusja o projekcie <a href=\"https://forum.kodujdlapolski.pl/c/projekty/CzujnikiSmogu\">Forum Koduj dla Polski</a>
+- text: Zestaw dla bardziej zaawansowanych <a href=\"https://air.nettigo.pl/o-projekcie/\">Nettigo Air Monitor</a>
+- text: Najlepsza aplikacja do sprawdzania smogu w Polsce <a href=\"https://play.google.com/store/apps/details?id=pl.tajchert.canary&hl=pl\">Kanarek App</a>
+
+contacts:
+- name: luftdaten@kodujdlapolski.pl
+  url: mailto:luftdaten@kodujdlapolski.pl
+
+website: http://luftdaten.org.pl
