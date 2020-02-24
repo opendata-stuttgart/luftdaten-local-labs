@@ -1,0 +1,18 @@
+---
+key: lelabomotive
+title: Le Labo-Motive
+lat: 46.80224
+long: 1.62836
+
+meetings_title: Ouverture
+contacts_title: Contact
+
+meetings:
+- text: "Le jeudi soir de 18h à 22h et le samedi de 10h à 18h."
+- text: "http://www.lelabomotive.org/#calendrier pour vérifier si nous sommes ouverts"
+
+contacts:
+- name: Jean-Christophe LEGER
+- url: mailto:jean.christophe.l@lelabomotive.org
+
+website: http://lelabomotive.org
