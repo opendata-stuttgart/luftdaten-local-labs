@@ -31,13 +31,6 @@
 				width: 15px;
 				vertical-align: middle;
 			}
-			.labs_twitter:before {
-				display: inline-block;
-				padding-right: 5px;
-				content: url("img/twitter.svg");
-				width: 15px;
-				vertical-align: middle;
-			}
 			.labs_github:before {
 				display: inline-block;
 				padding-right: 5px;
@@ -49,6 +42,13 @@
 				display: inline-block;
 				padding-right: 5px;
 				content: url("img/gitlab.svg");
+				width: 15px;
+				vertical-align: middle;
+			}
+			.labs_instagram:before {
+				display: inline-block;
+				padding-right: 5px;
+				content: url("img/instagram.svg");
 				width: 15px;
 				vertical-align: middle;
 			}
@@ -70,6 +70,13 @@
 				display: inline-block;
 				padding-right: 5px;
 				content: url("img/telegram.svg");
+				width: 15px;
+				vertical-align: middle;
+			}
+			.labs_twitter:before {
+				display: inline-block;
+				padding-right: 5px;
+				content: url("img/twitter.svg");
 				width: 15px;
 				vertical-align: middle;
 			}
@@ -170,9 +177,6 @@ img.leaflet-tile {
 				if (typeof lab.facebook_page != 'undefined') {
 					lab_popuptext += "<tr><td class='labs_facebook'>Facebook page: </td><td><a href='https://www.facebook.com/"+lab.facebook_page+"' target='_blank' rel='noreferrer'>"+lab.facebook_page+"</a></td></tr>";
 				}
-				if (typeof lab.twitter != 'undefined') {
-					lab_popuptext += "<tr><td class='labs_twitter'>Twitter: </td><td><a href='https://twitter.com/"+lab.twitter+"' target='_blank' rel='noreferrer'>@"+lab.twitter+"</a></td></tr>";
-				}
 				if (typeof lab.github != 'undefined') {
 					lab_popuptext += "<tr><td class='labs_github'>github: </td><td><a href='https://github.com/"+lab.github+"' target='_blank' rel='noreferrer'>"+lab.github+"</a></td></tr>";
 				}
@@ -190,6 +194,12 @@ img.leaflet-tile {
 				}
 				if (typeof lab.telegram_group != 'undefined') {
 					lab_popuptext += "<tr><td class='labs_telegram'>Telegram group: </td><td><a href='https://t.me/"+lab.telegram_group+"' target='_blank' rel='noreferrer'>"+lab.telegram_group+"</a></td></tr>";
+				}
+				if (typeof lab.instagram != 'undefined') {
+					lab_popuptext += "<tr><td class='labs_instagram'>Instagram: </td><td><a href='https://instagram.com/"+lab.instagram+"' target='_blank' rel='noreferrer'>"+lab.instagram+"</a></td></tr>";
+				}
+				if (typeof lab.twitter != 'undefined') {
+					lab_popuptext += "<tr><td class='labs_twitter'>Twitter: </td><td><a href='https://twitter.com/"+lab.twitter+"' target='_blank' rel='noreferrer'>@"+lab.twitter+"</a></td></tr>";
 				}
 				lab_popuptext += "</table>";
 				lab_popuptext += "<br />Your location is missing? Add it <a href='https://github.com/opendata-stuttgart/luftdaten-local-labs' target='_blank' rel='noreferrer'>here</a>."
