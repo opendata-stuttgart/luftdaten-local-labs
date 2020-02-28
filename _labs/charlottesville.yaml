@@ -1,0 +1,36 @@
+---
+key: charlottesville
+title: CCI/librelab
+lat: 38.029306
+long: -78.476678
+
+# translations for titles
+meetings_title: Meetings
+contacts_title: Contact
+
+meetings:
+- text: We have monthly meetings at the CCI on Free and Open Source-based environmental monitoring
+- text: You can find more information in our website (https://cci.smartcville.com)
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Lucas Ames
+  url: mailto: lucas@smartcville.com
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://cci.smartcville.com
+facebook:
+facebook_group:
+facebook_page:
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter:
+
