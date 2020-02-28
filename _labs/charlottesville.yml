@@ -17,7 +17,7 @@ meetings:
 #   url: email address or url of contact form
 contacts:
 - name: Lucas Ames
-  url: mailto: lucas@smartcville.com
+  url: mailto:lucas@smartcville.com
 
 # leave empty if non-existent
 # Twitter and Telegram: account name without @ sign
