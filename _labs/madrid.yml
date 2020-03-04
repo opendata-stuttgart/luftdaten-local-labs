@@ -8,8 +8,8 @@ meetings_title: Meetings
 contacts_title: Contacto
 
 meetings:
-- text: ¡Hola! Somos la AAVV Barrio Moscardó del distrito de Usera. ¿Has oído hablar de Moscaire? Se trata del proyecto que hemos impulsado desde nuestro colectivo vecinal con el objetivo de crear una herramienta local que mida, en tiempo real, la calidad del aire de nuestros barrios. Si quieres formar parte de nuestra comunidad e instalar tu propio sensor, nosotros te podemos asesorar y ayudarte en ello.
-- text: Ponte en contacto con nosotros a través de\: https://barriomoscardo.com/
+- text: "¡Hola! Somos la AAVV Barrio Moscardó del distrito de Usera. ¿Has oído hablar de Moscaire? Se trata del proyecto que hemos impulsado desde nuestro colectivo vecinal con el objetivo de crear una herramienta local que mida, en tiempo real, la calidad del aire de nuestros barrios. Si quieres formar parte de nuestra comunidad e instalar tu propio sensor, nosotros te podemos asesorar y ayudarte en ello."
+- text: "Ponte en contacto con nosotros a través de: https://barriomoscardo.com/"
 
 contacts:
 - name: AAVV Barrio Moscardó
