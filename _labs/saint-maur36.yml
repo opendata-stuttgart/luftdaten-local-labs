@@ -4,15 +4,17 @@ title: Le Labo-Motive
 lat: 46.80224
 long: 1.62836
 
-meetings_title: Ouverture
+meetings_title: Renseignements
 contacts_title: Contact
 
 meetings:
+- text: "Le Labo-Motive est en mesure de vous aider à mettre en œuvre votre sonde Luftdaten."
+- text: "Nous intégrons en plus de la sonde d'origine un circuit de mise off/on chaque 24h."
 - text: "Le jeudi soir de 18h à 22h et le samedi de 10h à 18h."
 - text: "http://www.lelabomotive.org/#calendrier pour vérifier si nous sommes ouverts"
 
 contacts:
 - name: Jean-Christophe LEGER
-  url: mailto:jean.christophe.l@lelabomotive.org
+- url: mailto:jean.christophe.l@lelabomotive.org
 
 website: http://lelabomotive.org
