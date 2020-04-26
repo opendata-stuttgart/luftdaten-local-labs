@@ -1,0 +1,34 @@
+---
+key: prague
+title: Vytvoř si vlastní senzor!
+lat: 50.077644
+long: 14.444882
+
+# translations for titles
+meetings_title: Schůzky
+contacts_title: Kontakty
+
+meetings:
+- text: Máte zájem přijít? Dejte nám vědět!
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Michael
+  url: mailto:info@senzorvzduchu.cz
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://senzorvzduchu.cz
+facebook:
+facebook_group:
+facebook_page:
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter:
