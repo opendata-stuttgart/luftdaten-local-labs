@@ -8,7 +8,7 @@ meetings_title: Meetings
 contacts_title: Contacts
 
 meetings:
-- text: Every 2nd Thursday at the <a href=\"https://www.meetup.com/Codebridge/\">Codebridge Newlands Community Evenings</a>
+- text: Every 2nd Thursday at the <a href='https://www.meetup.com/Codebridge/' target='_blank' rel='noreferrer'>Codebridge Newlands Community Evenings</a>
 
 contacts:
 - name: Reuben Honigwachs
