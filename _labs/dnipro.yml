@@ -8,8 +8,8 @@ meetings_title: Зустрічі
 contacts_title: Контакти
 
 meetings:
-- text: Декілька разів на півріччя ми проводимо зустрічі стосовно громадського моніторингу атмосферного повітря. Але якщо ви бажаєте отримати допомогу або консультацію раніше, то напишіть нам на електрону адресу <a href=\"mailto:savednipro@gmail.com\">savednipro@gmail.com</a> або у приватні повідомлення на сторінці <a href=\"https://www.facebook.com/pg/savednipro/events/\">Facebook</a>. 
-- text: Усі зустрічі можна знайти на сторінці у <a href=\"https://www.facebook.com/pg/savednipro/events/\">Facebook</a>.
+- text: Декілька разів на півріччя ми проводимо зустрічі стосовно громадського моніторингу атмосферного повітря. Але якщо ви бажаєте отримати допомогу або консультацію раніше, то напишіть нам на електрону адресу <a href='mailto:savednipro@gmail.com'>savednipro@gmail.com</a> або у приватні повідомлення на сторінці <a href='https://www.facebook.com/pg/savednipro/events/' target='_blank' rel='noreferrer'>Facebook</a>. 
+- text: Усі зустрічі можна знайти на сторінці у <a href='https://www.facebook.com/pg/savednipro/events/' target='_blank' rel='noreferrer'>Facebook</a>.
 
 contacts:
 - name: Save Dnipro
