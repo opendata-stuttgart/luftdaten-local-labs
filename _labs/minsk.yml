@@ -1,0 +1,33 @@
+---
+key: minsk
+title: AirMQ - узнай, чем ты дышишь
+lat: 53.939409
+long: 27.601421
+
+# translations for titles
+meetings_title: События и встречи
+contacts_title: Контакты
+
+meetings:
+- text: Встречи и вебинары онлайн: следите за анонсами на сайте, в Facebook и Telegram 
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Как связаться с нами
+  url: https://airmq.by/#contact
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://airmq.by
+facebook_group: https://www.facebook.com/groups/AirMQ.Belarus/
+facebook_page:
+github: https://github.com/AirMQ
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram: https://t.me/airmq
+telegram_group:
+twitter:
