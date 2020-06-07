@@ -21,13 +21,12 @@ contacts:
 # leave empty if non-existent
 # Twitter and Telegram: account name without @ sign
 website: https://airmq.by
-facebook_group: https://www.facebook.com/groups/AirMQ.Belarus/
+facebook_group: AirMQ.Belarus
 facebook_page:
-github: https://github.com/AirMQ
+github: AirMQ
 gitlab:
 instagram:
-mastodon:
 meetup:
-telegram: https://t.me/airmq
+telegram: airmq
 telegram_group:
 twitter:
