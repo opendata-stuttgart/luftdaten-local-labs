@@ -12,7 +12,7 @@ contacts_title: Kontakte
 meetings:
 - text: jeden 2. Dienstag im Monat im <a href='https://shackspace.de/' target='_blank' rel='noreferrer'>shackspace</a>
 - text: jeden 4. Dienstag im Monat in der <a href='http://www1.stuttgart.de/stadtbibliothek/' target='_blank' rel='noreferrer'>Stadtbibliothek</a>
-- text: weitere Infos auf <a href='https://www.meetup.com/de-DE/OK-Lab-Stuttgart-Meet-Up/' target='_blank' rel='noreferrer'>Meetup</a>
+- text: weitere Infos auf <a href='https://events.sensor.community/ok-lab-stuttgart/' target='_blank' rel='noreferrer'>GetTogether</a>
 
 # multiple contacts possible
 # - name: name of contact
@@ -33,7 +33,7 @@ github: opendata-stuttgart
 gitlab:
 instagram:
 mastodon: https://fosstodon.org/@SensorCommunity
-meetup: OK-Lab-Stuttgart-Meet-Up
+meetup:
 telegram:
 telegram_group:
 twitter: SensorCommunity
