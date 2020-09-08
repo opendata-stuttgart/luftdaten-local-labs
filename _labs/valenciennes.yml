@@ -1,0 +1,19 @@
+---
+key: Valenciennes
+title: De l'air !!!
+lat: 50.3517
+long: 3.5176
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+meetings:
+- text: Lieu et fréquence à préciser.
+
+contacts:
+- name: Pierrick
+  url: mailto:delair@mailo.com
+
+website: https://sensor.community/fr/
+
+facebook_group: https://www.facebook.com/groups/1295830487278287/
