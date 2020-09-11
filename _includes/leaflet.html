@@ -100,7 +100,9 @@ img.leaflet-tile {
 					lab_popuptext += "<tr><td class='labs_twitter'>Twitter: </td><td><a href='https://twitter.com/"+lab.twitter+"' target='_blank' rel='noreferrer'>@"+lab.twitter+"</a></td></tr>";
 				}
 				lab_popuptext += "</table>";
-				lab_popuptext += "<br />Your location is missing? Add it <a href='https://github.com/opendata-stuttgart/luftdaten-local-labs' target='_blank' rel='noreferrer'>here</a>."
+//				lab_popuptext += "<br />Your location is missing? Add it <a href='https://github.com/opendata-stuttgart/luftdaten-local-labs' target='_blank' rel='noreferrer'>here</a>."
+                lab_popuptext += "<br />Edit this Pin? Go to <a href='https://github.com/opendata-stuttgart/luftdaten-local-labs' target='_blank' rel='noreferrer'>GitHub</a>.<br>Add new <a href='mailto:Partnership@Sensor.Community?subject=New%20local%20pin&body=1.%20Name%20of%20contact%20person%3A%202.%20Name%20of%20your%20city%3A%203.%20Is%20there%20a%20group%20supporting%20you%20%3F4.%20Describe%20your%20experience%20with%20Sensor.Community%20so%20far%3A%205.%20How%20did%20you%20found%20Sensor.Community%3A%20Article%2FWebsite%2FReport%2FFriend%2F6.%20Describe%20us%20shortly%20your%20current%20local%20situation%20for%20better%20understanding%3A7.%20We%20can%20have%20a%20personal%20call%20to%20discuss%20details%20in%20the%20coming%20days.%20Please%20let%20us%20know%20your%20availability.' target='_blank' rel='noreferrer'>local Pin</a>."       
+                
 				var marker = L.marker(
 						[lab.lat, lab.lon],
 						{ icon:	new labelRight(
