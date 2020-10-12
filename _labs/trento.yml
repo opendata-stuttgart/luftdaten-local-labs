@@ -1,0 +1,37 @@
+---
+key: trento
+title: Lab CambiamoLaStrada @ Fixxati
+lat: 46.06901
+long: 11.11331
+
+# translations for titles
+meetings_title: Incontri
+contacts_title: Contatto
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Venerdì, dalle 18:30 alle 19:30.
+        Su prenotazione per organizzarci meglio.  Vogliamo diffondere il progetto a Trento e dintorni e siamo a disposizione per aiutare tutti gli interessati.  Scrivere a:
+        <a href='mailto:centraline@cambiamolastrada.it?subject:richiesta%20appuntamento' target='_blank' rel='noreferrer'>centraline@cambiamolastrada.it</a>
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Centraline
+  url: mailto:centraline@cambiamolastrada.it
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://cambiamolastrada.it/centraline
+facebook:
+facebook_group:
+facebook_page:
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter:
