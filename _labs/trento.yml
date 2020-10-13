@@ -11,7 +11,7 @@ contacts_title: Contatto
 # If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
 meetings:
 - text: Venerdì, dalle 18:30 alle 19:30.
-        Su prenotazione per organizzarci meglio.  Vogliamo diffondere il progetto a Trento e dintorni e siamo a disposizione per aiutare tutti gli interessati.  Scrivere a:
+        Su prenotazione per organizzarci meglio.  Vogliamo diffondere il progetto a Trento e dintorni e siamo a disposizione per aiutare tutti gli interessati.  Scrivere a&#058;
         <a href='mailto:centraline@cambiamolastrada.it?subject:richiesta%20appuntamento' target='_blank' rel='noreferrer'>centraline@cambiamolastrada.it</a>
 
 # multiple contacts possible
