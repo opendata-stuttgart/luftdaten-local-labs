@@ -1,8 +1,8 @@
 ---
-key: stuttgart
-title: Lab Stuttgart
-lat: 48.776540
-long: 9.173700
+key: cottbus
+title: Lab Cottbus
+lat: 51.76894369
+long: 14.32220221
 
 # translations for titles
 meetings_title: Meetings
@@ -10,18 +10,19 @@ contacts_title: Kontakte
 
 # If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
 meetings:
-- text: jeden 2. Dienstag im Monat im <a href='https://shackspace.de/' target='_blank' rel='noreferrer'>shackspace</a>
-- text: jeden 4. Dienstag im Monat in der <a href='http://www1.stuttgart.de/stadtbibliothek/' target='_blank' rel='noreferrer'>Stadtbibliothek</a>
-- text: weitere Infos auf <a href='https://events.sensor.community/ok-lab-stuttgart/' target='_blank' rel='noreferrer'>GetTogether</a>
+#- text: jeden 2. Dienstag im Monat im <a href='https://shackspace.de/' target='_blank' rel='noreferrer'>shackspace</a>
+#- text: jeden 4. Dienstag im Monat in der <a href='http://www1.stuttgart.de/stadtbibliothek/' target='_blank' rel='noreferrer'>Stadtbibliothek</a>
+#- text: weitere Infos auf <a href='https://events.sensor.community/ok-lab-stuttgart/' target='_blank' rel='noreferrer'>GetTogether</a>
+
 
 # multiple contacts possible
 # - name: name of contact
 #   url: email address or url of contact form
 contacts:
-- name: Lukas
-  url: mailto:lukas@sensor.community
-- name: Rajko Zschiegner
-  url: mailto:rajko@sensor.community
+- name: Christion
+  url: mailto:christian.hanisch@fablab-cottbus.de
+- name: Christopher
+  url: mailto:c.glossner@fablab-cottbus.de
 
 # leave empty if non-existent
 # Twitter and Telegram: account name without @ sign
