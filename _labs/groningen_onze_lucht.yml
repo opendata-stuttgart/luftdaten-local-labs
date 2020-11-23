@@ -1,0 +1,18 @@
+---
+key: Groningen
+title: Onze Lucht
+lat: 53.214
+long: 6.56019
+
+meetings_title: Meetings
+contacts_title: Contact
+
+meetings:
+- text: Interesse om eens langs te komen? Laat het ons weten!
+
+contacts:
+- name: Onze Lucht
+  url: mailto:t.a.jurriens@rug.nl
+
+website: https://onzelucht.nl
+twitter: onzelucht
