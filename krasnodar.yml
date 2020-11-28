@@ -1,0 +1,24 @@
+---
+key: krasnodar
+title: Узнайте чем дышите
+lat: 45.02757
+long: 38.96694
+
+meetings_title: Встречи
+contacts_title: Свяжитесь с нами
+
+meetings:
+- text: Поможем собрать и разместить свой датчик твердых частиц для мониторинга воздуха. 
+- text: Напишите нам на email!
+- text: Анонсы планируемых встреч будут размещены на наших ресурсах в Facebook. Следитe
+- text: за обновлениями! Не забудьте записаться заранее!
+
+contacts:
+- name: Группа в Facebook&#58; @2128913607255253
+  url: https://fb.com/groups/2128913607255253/
+- name: Дмитрий Шевченко
+  url: mailto:ciaec.off@gmail.com
+
+
+facebook_group: 2128913607255253
+website: https://ciaec.ru/social-campaign/uznayte-chem-dyshite/
