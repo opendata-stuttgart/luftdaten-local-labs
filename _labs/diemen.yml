@@ -1,0 +1,19 @@
+---
+key: diemen
+title: Daarom Duurzaam Diemen
+lat: 52.3400
+long: 4.9620
+
+meetings_title: Meedoen?
+contacts_title: Contact
+
+meetings:
+- text: Interesse om mee te doen? Stuur een mailtje!
+
+contacts:
+- name: Evert Kuiken
+  url: mailto:info@evertkuiken.nl
+
+website: https://daaromduurzaamdiemen.nl
+
+twitter: duurzaamdorpdmn
