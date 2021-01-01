@@ -1,0 +1,14 @@
+---
+key: air_quality_miskolc
+title: Air Quality Miskolc
+lat: 48.1066
+long: 20.7683
+
+meetings:
+- text: Info on website 
+
+contacts:
+- name: Ludnik Levente
+  url: mailto:levente@ludnik.net
+
+website: https://szentannamiskolc.hu/
