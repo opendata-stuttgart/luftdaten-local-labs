@@ -16,8 +16,8 @@ meetings:
 # - name: name of contact
 #   url: email address or url of contact form
 contacts:
-- name:T.C.
-  url: 
+- name: T.C.
+  url: mailto:tecnologia.civica@protonmail.com
 
 # leave empty if non-existent
 # Twitter and Telegram: account name without @ sign
