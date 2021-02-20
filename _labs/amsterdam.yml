@@ -1,0 +1,41 @@
+---
+key: amsterdam 
+title: Sensemakers Amsterdam
+lat: 52.375745
+long: 4.908288
+
+# translations for titles
+meetings_title: Meetings
+contacts_title: Contacts
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: We have do-it-yourself and lecture meetings. One of our project is the Airsense project for urban air quality. 
+- text: The first Wednesday of the month, at the Sensemakers Lab it’s all about Do-It-Yourself. 
+- text: You can work on your own projects, learn from zero or join one of the projects at the 
+- text: <a href='https://www.oba.nl/oba/english/central-library.html' target='_blank' rel='noreferrer'>OBA, the public library at the Oosterdok.</a>
+- text: Every third Wednesday of the month we have presentations on Internet-of-Things and related subjects 
+- text: (networks, sensors, new startups, security, AI, smart buildings etc). 
+- text: Our lectures are hosted by the <a href='https://www.marineterrein.nl/en/ target='_blank' rel='noreferrer'>Marineterrein Amsterdam in the commandantswoning</a>.
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Edwin Wisse (Airsense project)
+  url: mailto:edwin@wisze.net
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://www.sensemakersams.org/
+facebook:
+facebook_group:
+facebook_page:
+github: sensemakersamsterdam
+gitlab:
+instagram:
+mastodon: 
+meetup: sensemakersams
+telegram:
+telegram_group:
+twitter: SensemakersA
