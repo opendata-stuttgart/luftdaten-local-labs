@@ -11,17 +11,15 @@ contacts_title: Contacts
 # If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
 meetings:
 - text: We have do-it-yourself and lecture meetings. One of our project is the Airsense project for urban air quality. 
-- text: The first Wednesday of the month, at the Sensemakers Lab it’s all about Do-It-Yourself. 
-- text: You can work on your own projects, learn from zero or join one of the projects at the 
-- text: <a href='https://www.oba.nl/oba/english/central-library.html' target='_blank' rel='noreferrer'>OBA, the public library at the Oosterdok.</a>
-- text: Every third Wednesday of the month we have presentations on Internet-of-Things and related subjects 
-- text: (networks, sensors, new startups, security, AI, smart buildings etc). 
-- text: Our lectures are hosted by the <a href='https://www.marineterrein.nl/en/ target='_blank' rel='noreferrer'>Marineterrein Amsterdam in the commandantswoning</a>.
+- text: For meetings and venues see <a href='https://www.meetup.com/nl-NL/sensemakersams/' target='_blank' rel='noreferrer'>meetup</a>. 
+- text: For Airsense project info see <a href='https://github.com/sensemakersamsterdam/airsense' target='_blank' rel='noreferrer'>github</a>. 
 
 # multiple contacts possible
 # - name: name of contact
 #   url: email address or url of contact form
 contacts:
+- name: Sensemakers (meetings)
+  url: mailto:SensemakersAMS@protonmail.com
 - name: Edwin Wisse (Airsense project)
   url: mailto:edwin@wisze.net
 
