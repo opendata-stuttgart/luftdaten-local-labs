@@ -1,0 +1,30 @@
+---
+key: foix
+title: Foix en commun.e
+lat: 42.965079
+long: 1.6076186
+
+meetings_title: Rencontres
+contacts_title: Contact
+
+meetings:
+- text: Lieu de rencontre suivant les ateliers et événements. 
+- text: Fréquence des rencontres suivant les événements. 
+
+contacts:
+- name: Association Foix en Commun.e 
+  url: mailto:foixencommune@gmail.com
+
+
+website: http://foixencommune.fr/
+facebook:
+facebook_group:
+facebook_page: foixencommune/
+github: 
+gitlab:
+instagram:
+mastodon: 
+meetup:
+telegram:
+telegram_group:
+twitter: 
