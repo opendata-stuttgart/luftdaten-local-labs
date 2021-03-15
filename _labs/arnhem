@@ -1,0 +1,35 @@
+---
+key: arnhem
+title: Natuur en milieu Gelderland
+lat: 51.98234939575195
+long: 5.899249076843262
+
+# translations for titles
+meetings_title: Meetings
+contacts_title: Contacts
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Contact us if you want to participate in a do-it-yourself workshop or want more information about local air quality.
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Marieke Gorkink
+  url: mailto:m.gorkink@natuurenmilieugelderland.nl
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://www.natuurenmilieugelderland.nl/schoneluchtarnhem
+facebook:
+facebook_group:
+facebook_page:
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter: 
