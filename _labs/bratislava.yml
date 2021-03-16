@@ -1,0 +1,15 @@
+---
+key: bratislava
+title: Cyklokoalícia Bratislava
+lat: 48.1461510
+long: 17.0983737
+
+contacts_title: Kontakt
+
+contacts:
+- name: info@cyklokoalicia.sk
+  url: mailto:info@cyklokoalicia.sk
+- name: Kontaktný formulár
+  url: https://cyklokoalicia.sk/kontakt/
+
+website: https://vzduch.cyklokoalicia.sk/public/
