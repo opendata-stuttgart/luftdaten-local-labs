@@ -1,0 +1,32 @@
+---
+key: cardiff
+title: Cardiff Labs
+lat: 51.50.187
+long: -3.19316
+
+# translations for titles
+meetings_title: Meetings
+contacts_title: Contact
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Covid inhibited <a href='http://openair.wales/' target='_blank' rel='noreferrer'>OpenAir.WALES</a>
+
+contacts:
+- name: dicktonyboy
+  url: mailto:richard@wenner.org
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: http://openair.wales
+facebook:
+facebook_group:
+facebook_page:
+github: 
+gitlab:
+instagram:
+mastodon: 
+meetup:
+telegram:
+telegram_group:
+twitter: 
