@@ -1,0 +1,37 @@
+---
+key: saint-petersburg
+title: Дыши, любимый город!
+lat: 59.938951
+long: 30.315635
+
+# translations for titles
+meetings_title: Встречи
+contacts_title: Контакты
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Информация о встречах и мастерских по сборке датчиков размещается в телеграм-канале https://t.me/SPbBreath
+- text: Поможем собрать и разместить свой датчик твердых частиц для мониторинга воздуха.
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Роман
+  url: mailto:contact@citizenscience.ru
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: 
+facebook:
+facebook_group:
+facebook_page:
+github: 
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram: SPbBreath
+telegram_group: breathespb
+twitter: 
+
