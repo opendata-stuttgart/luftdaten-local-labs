@@ -10,7 +10,7 @@ contacts_title: Contacts
 
 # If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
 meetings:
-- text: Venez nous rencontrez !
+- text: Venez nous rencontrer !
 
 # multiple contacts possible
 # - name: name of contact
