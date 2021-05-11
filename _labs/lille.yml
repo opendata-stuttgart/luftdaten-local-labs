@@ -1,0 +1,35 @@
+---
+key: lille
+title: Respire Hauts-de-France
+lat: 50.63112817273642
+long: 3.05642843310259
+
+# translations for titles
+meetings_title: Rencontres
+contacts_title: Contacts
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Venez nous rencontrer !
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Contact
+  url: mailto:hdf@respire-asso.org
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://www.respire-asso.org/
+facebook:
+facebook_group:
+facebook_page: AssociationRespire
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter: respireasso
