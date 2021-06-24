@@ -1,0 +1,35 @@
+---
+key: rouen
+title: Rouen Respire
+lat: 49.44546775260442
+long: 1.0693562337666467
+
+# translations for titles
+meetings_title: Rencontres
+contacts_title: Contacts
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Bientôt...
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Rouen Respire
+  url: mailto:president@rouenrespire.fr
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://rouenrespire.fr/
+facebook:
+facebook_group:
+facebook_page:
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter: RouenRespire
