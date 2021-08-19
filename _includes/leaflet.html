@@ -10,7 +10,7 @@ img.leaflet-tile {
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
-    var mapLayer = L.tileLayer('https://{s}.maps.sensor.community/tiles/{z}/{x}/{y}.png', {
+    var mapLayer = L.tileLayer('https://{s}.maps.sensor.community/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
         minZoom: 1,
         maxZoom:15,
