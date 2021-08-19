@@ -10,10 +10,11 @@ img.leaflet-tile {
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
-    var mapLayer = L.tileLayer('https://maps.sensor.community/tiles/{z}/{x}/{y}.png', {
+    var mapLayer = L.tileLayer('https://{s}.maps.sensor.community/tiles/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
         minZoom: 1,
-        maxZoom:15
+        maxZoom:15,
+	subDomains: ["osmc1","osmc2","osmc3"]
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
