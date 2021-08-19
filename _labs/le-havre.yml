@@ -22,7 +22,7 @@ contacts:
 # leave empty if non-existent
 # Twitter and Telegram: account name without @ sign
 website: https://www.lh3d.fr
-facebook: https://fr-fr.facebook.com/LH3Dfablab/
+facebook: LH3Dfablab
 facebook_group:
 facebook_page:
 github:
@@ -32,4 +32,4 @@ mastodon:
 meetup:
 telegram:
 telegram_group:
-twitter: https://twitter.com/lh3dfablab?lang=fr
+twitter: lh3dfablab
