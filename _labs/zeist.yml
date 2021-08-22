@@ -1,0 +1,30 @@
+---
+key: zeist
+title: SMAL Zeist
+lat: 52.0823587
+long: 5.2390307
+
+# translations for titles
+meetings_title: Meetings
+contacts_title: Contact
+
+- text: Wil je meedoen? Stuur dan even een berichtje.
+
+contacts:
+- name: Egon
+  url: mailto:sensor.community@meten-natuurlijk.nl
+- name: Bart
+  url: mailto:sensor.community@meten-natuurlijk.nl
+
+website: https://smal.meten-natuurlijk.nl/
+facebook:
+facebook_group:
+facebook_page:
+github:
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter:
