@@ -112,10 +112,11 @@ img.leaflet-tile {
     map.attributionControl.setPrefix("");
     map.scrollWheelZoom.disable();
     // basemap
-    var mapLayer = L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
+    var mapLayer = L.tileLayer('https://{s}.maps.sensor.community/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
         minZoom: 1,
-        maxZoom:15
+        maxZoom:15,
+	subdomains: ["osmc1","osmc2","osmc3"]
     });
     // define left-aligned and right-aligned labels and icons
     var labelBaseOptions = {
@@ -169,7 +170,7 @@ img.leaflet-tile {
 				}
 				lab_popuptext += "<table class='labs_sociallinks'>";
 				if (typeof lab.facebook != 'undefined') {
-					lab_popuptext += "<tr><td class='labs_facebook'>Facebook: </td><td><a href='https://www.facebook.com/"+lab.website+"' target='_blank' rel='noreferrer'>"+lab.facebook+"</a></td></tr>";
+					lab_popuptext += "<tr><td class='labs_facebook'>Facebook: </td><td><a href='https://www.facebook.com/"+lab.facebook+"' target='_blank' rel='noreferrer'>"+lab.facebook+"</a></td></tr>";
 				}
 				if (typeof lab.facebook_group != 'undefined') {
 					lab_popuptext += "<tr><td class='labs_facebook'>Facebook group: </td><td><a href='https://www.facebook.com/groups/"+lab.facebook_group+"' target='_blank' rel='noreferrer'>"+lab.facebook_group+"</a></td></tr>";
