@@ -1,0 +1,31 @@
+---
+key: sterlitamak
+title: Стерлитамак, Дыши!
+lat: 53.6220285
+long: 55.9206984
+
+meetings_title: Встречи
+contacts_title: Контакты
+
+meetings:
+- text: Информация о воздухе, анонсы переприятий и данные по датчикам в телеграм @vozduh_str_slv и на сайте.
+- text: Поможем собрать и разместить свой датчик твердых частиц для мониторинга воздуха.
+
+contacts:
+- name: Стерлитамак, Дыши!
+  url: mailto:sterlitamakdishi@mail.ru
+- name: Rustam
+  url: mailto:info@bashair.ru
+
+website: https://bashair.ru
+facebook:
+facebook_group:
+facebook_page:
+github: Bash-Air
+gitlab:
+instagram: za_vozdyh_str
+mastodon:
+meetup:
+telegram: vozduh_str_slv
+telegram_group: bashair102
+twitter:
