@@ -1,0 +1,35 @@
+---
+key: vannes
+title: MakerSpace56 
+lat: 47.650490
+long: -2.781330
+
+# translations for titles
+meetings_title: Rencontres
+contacts_title: Contacts
+
+# If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
+meetings:
+- text: Venez nous rencontrer lors des mercredis "OpenLab" (selon l'agenda <a href='https://makerspace56.org/evenements/' target='_blank' rel='noreferrer'>"Prochains rendez-vous"</a>)
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: MakerSpace56
+  url: mailto:contact@makerspace56.org
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://makerspace56.org
+facebook:
+facebook_group:
+facebook_page:
+github: Makerspace56
+gitlab:
+instagram:
+mastodon:
+meetup:
+telegram:
+telegram_group:
+twitter: makerspace56
