@@ -10,7 +10,7 @@ contacts_title: Contacts
 
 # If you need to include a link in this texts, don't forget to add  "target='_blank' rel='noreferrer'". Otherwise link will be removed.
 meetings:
-- text: Venez nous rencontrer lors des mercredis "OpenLab" (selon l'agenda <a href='https://makerspace56.org/evenements/' target='_blank' rel='noreferrer'>"Prochains rendez-vous"</a>)
+- text: Venez nous rencontrer lors des mercredis OpenLab (selon agenda <a href='https://makerspace56.org/evenements/' target='_blank' rel='noreferrer'>Prochains rendez-vous</a>)
 
 # multiple contacts possible
 # - name: name of contact
