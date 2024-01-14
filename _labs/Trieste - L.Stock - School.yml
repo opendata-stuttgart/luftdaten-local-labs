@@ -1,22 +1,23 @@
 ---
-key: Trieste 'L.Stock' School
-title: Lab Scuola secondaria di I° 'Lionello Stock' - Legambiente Trieste
+key: Scuola "Lionello Stock"
+title: Laboratorio della Scuola secondaria di I° 'Lionello Stock' di Trieste
+Partner: Legambiente Trieste
 lat: 45.63881
 long: 13.76406
 
-meetings_title: Montaggio e registrazione di centraline per il montaggio delle polveri sottili
-contacts_title: Attività di educazione ambientale per il monitoraggio della qualità dell’aria. Gemellaggio di scuole che aderiscono al progetto Luftdaten
+meetings_title: Montaggio e registrazione di centraline per il monitoraggio delle polveri sottili
+contacts_title: Attività di educazione ambientale,Gemellaggio di scuole che aderiscono al progetto Luftdaten
 
 meetings:
-- text: Il laboratorio scolastico si rinnova annualmente&colon; le classi terze, trasmettono alle seconde le esperienze maturate nel montaggio e nella gestione delle centraline nel corso del precedente anno scolastico
+- text: Il laboratorio scolastico si rinnova annualmente; le classi terze trasmettono alle seconde le esperienze maturate nel montaggio e nella gestione delle centraline nel corso del precedente anno scolastico
 - text: Il laboratorio potrà svolgere la stessa attività anche nei confronti di altre scuole della città di Trieste
-- text: Il laboratorio è aperto alla collaborazione con altre scuole che hanno adottato le centraline Luftdaten
+- text: Il laboratorio è aperto alla collaborazione con altre scuole che hanno adottato le centraline
 
 contacts:
 - name: Mario Mearelli
-  url: mearelli@gmail.com
+  url: mailto:mearelli@gmail.com
 - name: Bruna Bonechi
-  url: bruna.bonechi@campielisi.edu.it
+  url: mailto:bruna.bonechi@campielisi.edu.it
 
 website: https://campielisi.edu.it
 facebook: https://www.facebook.com/legambiente.trieste/
