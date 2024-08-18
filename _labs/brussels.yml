@@ -1,14 +1,14 @@
 ---
 key: civic_lab_brussels
 title: Civic Lab Brussels
-lat: 50.845369
-long: 4.357297
+lat: 50.85563
+long: 4.32116
 
 meetings:
-- text: bi-weekly
+- text: first tuesday of the month
 
 contacts:
-- name: Dries van R.
-  url: http://influencair.be/
-
-website: http://influencair.be/
+- name: Rik Drabs
+  url: https://www.meetup.com/nl-NL/civic-lab-brussels/
+  website: https://www.meetup.com/nl-NL/civic-lab-brussels/
+  mail: influencair2017@gmail.com 
