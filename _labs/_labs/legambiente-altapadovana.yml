@@ -1,0 +1,24 @@
+---
+key: legambiente-altapadovana
+title: Legambiente Altapadovana
+lat: 45.64
+long: 11.756
+
+# translations for titles
+meetings_title: Incontri
+contacts_title: Contatti
+
+# multiple contacts possible
+# - name: name of contact
+#   url: email address or url of contact form
+contacts:
+- name: Legambiente Altapadovana
+  url: mailto: altapadovana@legambienteveneto.it
+
+# leave empty if non-existent
+# Twitter and Telegram: account name without @ sign
+website: https://sites.google.com/view/legambientealtapadovana
+facebook:
+facebook_group:
+facebook_page: LegambienteAltaPadovana
+instagram: legambiente_altapadovana
